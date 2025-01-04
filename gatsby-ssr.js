@@ -7,6 +7,15 @@
 /**
  * @type {import('gatsby').GatsbySSR['onRenderBody']}
  */
-exports.onRenderBody = ({ setHtmlAttributes }) => {
-  setHtmlAttributes({ lang: `en` })
-}
+const React = require("react");
+
+exports.onRenderBody = ({ setHeadComponents, setHtmlAttributes }) => {
+  setHtmlAttributes({ lang: "en" });
+  setHeadComponents([
+    <link
+      key="tailwindcss"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />,
+  ]);
+};
