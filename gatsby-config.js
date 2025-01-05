@@ -7,12 +7,19 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
+require("dotenv").config({
+  path: `.env`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Regulus`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Advanced monitoring solutions work seamlessly in the
+        background, detecting and alerting suspicious activities so you can
+        focus on driving innovation and growth.`,
     author: `@gregulus`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://getregulus.co/`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -39,6 +46,16 @@ module.exports = {
         // theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/thumbnail-white.png`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-google-gtag",
+      options: {
+        trackingIds: [process.env.GATSBY_GA_TRACKING_ID],
+        pluginConfig: {
+          head: true,
+          respectDNT: true,
+        },
       },
     },
   ],
