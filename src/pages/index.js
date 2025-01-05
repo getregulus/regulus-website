@@ -8,13 +8,13 @@ import Deployments from "../components/deployments"
 
 const IndexPage = () => (
   <Layout>
-    <main className="flex-grow">
-      <Seo
+    <Seo
         title="Regulus"
         description="Advanced monitoring solutions work seamlessly in the
         background, detecting and alerting suspicious activities so you can
         focus on driving innovation and growth."
       />
+    <main className="flex-grow">
       <Hero />
       <Features />
       <Deployments />
