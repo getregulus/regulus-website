@@ -97,16 +97,18 @@ const Navbar = () => {
               >
                 <ul className="py-2">
                   <li>
-                    <a
-                      href="#product1"
+                    <Link
+                      to="/soon"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
                       Regulus Cloud
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <a
-                      href="#product2"
+                      href="https://github.com/getregulus/regulus"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
                       Regulus Self Hosted Community Edition
@@ -114,7 +116,9 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a
-                      href="#product3"
+                      href="https://github.com/getregulus/regulus"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
                       Regulus Self Hosted Enterprise Edition
@@ -254,55 +258,59 @@ const Navbar = () => {
               >
                 <ul className="py-2">
                   <li>
-                    <a
+                    <Link
                       href="#product1"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
                       Help Center
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="#product2"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
                       Docs
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
             </li>
 
             <li>
-              <a
-                href="#pricing"
-                className="block py-2 text-gray-700 hover:text-blue-600"
-              >
-                Pricing
-              </a>
+              <Link to="/pricing">
+                <a className="block py-2 text-gray-700 hover:text-blue-600">
+                  Pricing
+                </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#demo"
                 className="block py-2 text-gray-700 hover:text-blue-600"
               >
                 Demo
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
 
         {/* Buttons */}
         <div className="hidden md:flex items-center space-x-4">
-          <a
-            href="#signin"
+          <Link
+            href="/soon"
             className="border border-gray-300 px-4 py-2 rounded-md hover:bg-gray-100 text-center text-gray-700"
           >
             Sign In
-          </a>
-          <button className="bg-blue-400 text-white px-4 py-2 rounded-md shadow hover:bg-blue-500">
+          </Link>
+          <a
+            href="https://github.com/getregulus/regulus"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-blue-400 text-white px-4 py-2 rounded-md shadow hover:bg-blue-500"
+          >
             Get Started
-          </button>
+          </a>
         </div>
       </div>
 
@@ -336,17 +344,27 @@ const Navbar = () => {
               {openDropdown === "products" && (
                 <ul className="pl-4 mt-2 space-y-2">
                   <li>
-                    <a href="#product1" className="block text-gray-700">
+                    <Link to="/soon" className="block text-gray-700">
                       Regulus Cloud
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#product2" className="block text-gray-700">
+                    <a
+                      href="https://github.com/getregulus/regulus"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block text-gray-700"
+                    >
                       Regulus Self Hosted Community Edition
                     </a>
                   </li>
                   <li>
-                    <a href="#product3" className="block text-gray-700">
+                    <a
+                      hhref="https://github.com/getregulus/regulus"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block text-gray-700"
+                    >
                       Regulus Self Hosted Enterprise Edition
                     </a>
                   </li>
@@ -379,50 +397,50 @@ const Navbar = () => {
               {openDropdown === "features" && (
                 <ul className="pl-4 mt-2 space-y-2">
                   <li>
-                    <a href="#feature1" className="block text-gray-700">
+                    <Link to="#feature1" className="block text-gray-700">
                       Real-Time Transaction Monitoring
                       <p className="text-gray-600 text-xs max-w-sm">
                         Effortlessly track and evaluate transactions with
                         predefined and custom rules for unmatched security.
                       </p>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#feature2" className="block text-gray-700">
+                    <Link to="#feature2" className="block text-gray-700">
                       Customizable Alerts
                       <p className="text-gray-600 text-xs max-w-sm">
                         Receive instant notifications via Slack, OpsGenie,
                         Email, or Webhook whenever suspicious activities are
                         detected.
                       </p>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#feature3" className="block text-gray-700">
+                    <Link to="#feature3" className="block text-gray-700">
                       No-Code Rule Builder
                       <p className="text-gray-600 text-xs max-w-sm">
                         Design and implement custom monitoring rules through an
                         intuitive, no-code interface.
                       </p>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#feature3" className="block text-gray-700">
+                    <Link to="#feature3" className="block text-gray-700">
                       Global Compliance Coverage
                       <p className="text-gray-600 text-xs max-w-sm">
                         Ensure compliance with regulatory requirements in
                         different jurisdictions worldwide.
                       </p>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#feature3" className="block text-gray-700">
+                    <Link to="#feature3" className="block text-gray-700">
                       API and Integration Support
                       <p className="text-gray-600 text-xs max-w-sm">
                         Seamlessly integrate Regulus with your CI/CD pipeline
                         and popular tools in your tech stack.
                       </p>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               )}
@@ -453,40 +471,43 @@ const Navbar = () => {
               {openDropdown === "learn" && (
                 <ul className="pl-4 mt-2 space-y-2">
                   <li>
-                    <a href="#product1" className="block text-gray-700">
+                    <Link to="#product1" className="block text-gray-700">
                       Help Center
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#product2" className="block text-gray-700">
+                    <Link to="#product2" className="block text-gray-700">
                       Docs
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               )}
             </li>
             <li>
-              <a href="#pricing" className="block text-gray-700">
-                Pricing
-              </a>
+              <Link to="/pricing">
+                <a className="block text-gray-700">Pricing</a>
+              </Link>
             </li>
             <li>
-              <a href="#demo" className="block text-gray-700">
+              <Link to="#demo" className="block text-gray-700">
                 Demo
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#signin"
+              <Link
+                to="/soon"
                 className="block w-full text-center font-bold hover:text-blue-700 transition text-gray-700 border border-gray-300 px-4 py-2 rounded hover:bg-gray-100"
               >
                 Sign In
-              </a>
+              </Link>
             </li>
             <li>
-              <button className="bg-blue-400 text-white w-full py-2 rounded-md mt-2">
+              <Link
+                to="https://github.com/getregulus/regulus"
+                className="bg-blue-400 text-white w-full py-2 rounded-md mt-2"
+              >
                 Get Started
-              </button>
+              </Link>
             </li>
           </ul>
         </div>

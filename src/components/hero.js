@@ -1,19 +1,21 @@
 import React from "react"
-
-const Hero = () => (
+const Hero = ({ title, subtitle }) => (
   <section className="py-10 lg:py-20">
     <div className="max-w-7xl mx-auto px-6 text-center flex flex-col items-center">
-      <h1 className="text-gray-700 text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
-        Ensure Compliance, Build Trust
+      <h1 className="text-gray-700 text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight max-w-2xl">
+        {title}
       </h1>
       <p className="max-w-2xl text-gray-700 text-sm sm:text-base lg:text-lg mb-8 leading-relaxed">
-        Advanced monitoring solutions work seamlessly in the
-        background, detecting and alerting suspicious activities so you can
-        focus on driving innovation and growth.
+        {subtitle}
       </p>
-      <button className="bg-blue-400 text-white px-8 py-3 rounded-3xl shadow-lg hover:bg-blue-500 transition duration-300">
+      <a
+        href="https://github.com/getregulus/regulus"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-blue-400 text-white px-8 py-3 rounded-3xl shadow-lg hover:bg-blue-500 transition duration-300"
+      >
         Get Started
-      </button>
+      </a>
     </div>
   </section>
 )

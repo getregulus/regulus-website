@@ -29,12 +29,17 @@ const Footer = () => (
             <h3 className="text-gray-800 font-bold mb-3">Products</h3>
             <ul className="space-y-2 text-gray-600 text-sm flex-1">
               <li>
-                <a href="#cloud" className="hover:text-gray-800">
+                <Link to="/soon" className="hover:text-gray-800">
                   Regulus Cloud
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#self-hosted" className="hover:text-gray-800">
+                <a
+                  href="https://github.com/getregulus/regulus"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-gray-800"
+                >
                   Regulus Self-Hosted
                 </a>
               </li>
