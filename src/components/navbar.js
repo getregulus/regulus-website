@@ -4,12 +4,29 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [openDropdown, setOpenDropdown] = useState(null)
+
+  const handleDropdownClick = dropdownName => {
+    setOpenDropdown(openDropdown === dropdownName ? null : dropdownName)
+  }
+
+  const handleMouseEnter = dropdownName => {
+    if (window.innerWidth > 768) {
+      setOpenDropdown(dropdownName)
+    }
+  }
+
+  const handleMouseLeave = () => {
+    if (window.innerWidth > 768) {
+      setOpenDropdown(null)
+    }
+  }
 
   return (
-    <header className="sticky top-0 bg-white shadow z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+    <nav className="sticky top-0 bg-white shadow z-50">
+      <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
         {/* Logo */}
-        <div className="flex items-center space-x-2">
+        <div className="flex-shrink-0">
           <Link to="/">
             <StaticImage
               src="../images/logo.png"
@@ -22,226 +39,459 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Hamburger Button */}
-        <div className="md:hidden">
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="text-gray-700 hover:text-blue-600 focus:outline-none"
+        {/* Hamburger button for mobile */}
+        <button
+          className="md:hidden p-2 rounded-md text-gray-500 hover:bg-gray-100"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          <span className="sr-only">Open main menu</span>
+          <svg
+            className="w-6 h-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+
+        {/* Desktop Navigation Links */}
+        <div className="hidden md:flex flex-1 justify-center space-x-8">
+          <ul className="flex space-x-8">
+            {/* Products Dropdown */}
+            <li
+              className="relative group"
+              onMouseEnter={() => handleMouseEnter("products")}
+              onMouseLeave={handleMouseLeave}
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
+              <button
+                className="flex items-center py-2 text-gray-700 hover:text-blue-600"
+                onClick={() => handleDropdownClick("products")}
+              >
+                Products
+                <svg
+                  className="w-4 h-4 ml-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              <div
+                className={`${
+                  openDropdown === "products" ? "block" : "hidden"
+                } absolute top-full left-0 bg-white border text-gray-700 rounded-md shadow-lg min-w-max z-10`}
+              >
+                <ul className="py-2">
+                  <li>
+                    <a
+                      href="#product1"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Regulus Cloud
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#product2"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Regulus Self Hosted Community Edition
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#product3"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Regulus Self Hosted Enterprise Edition
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            {/* Features Dropdown */}
+            <li
+              className="relative group"
+              onMouseEnter={() => handleMouseEnter("features")}
+              onMouseLeave={handleMouseLeave}
+            >
+              <button
+                className="flex items-center py-2 text-gray-700 hover:text-blue-600"
+                onClick={() => handleDropdownClick("features")}
+              >
+                Features
+                <svg
+                  className="w-4 h-4 ml-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              <div
+                className={`${
+                  openDropdown === "features" ? "block" : "hidden"
+                } absolute top-full left-0 bg-white border text-gray-700 rounded-md shadow-lg min-w-max z-10`}
+              >
+                <ul className="py-2">
+                  <li>
+                    <a
+                      href="#feature1"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Real-Time Transaction Monitoring
+                      <p className="text-gray-600 text-xs max-w-sm">
+                        Effortlessly track and evaluate transactions with
+                        predefined and custom rules for unmatched security.
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#feature2"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Customizable Alerts
+                      <p className="text-gray-600 text-xs max-w-sm">
+                        Receive instant notifications via Slack, OpsGenie,
+                        Email, or Webhook whenever suspicious activities are
+                        detected.
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#feature2"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      No-Code Rule Builder
+                      <p className="text-gray-600 text-xs max-w-sm">
+                        Design and implement custom monitoring rules through an
+                        intuitive, no-code interface.
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#feature2"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Global Compliance Coverage
+                      <p className="text-gray-600 text-xs max-w-sm">
+                        Ensure compliance with regulatory requirements in
+                        different jurisdictions worldwide.
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#feature2"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      API and Integration Support
+                      <p className="text-gray-600 text-xs max-w-sm">
+                        Seamlessly integrate Regulus with your CI/CD pipeline
+                        and popular tools in your tech stack.
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            {/* Learn Dropdown */}
+            <li
+              className="relative group"
+              onMouseEnter={() => handleMouseEnter("learn")}
+              onMouseLeave={handleMouseLeave}
+            >
+              <button
+                className="flex items-center py-2 text-gray-700 hover:text-blue-600"
+                onClick={() => handleDropdownClick("learn")}
+              >
+                Learn
+                <svg
+                  className="w-4 h-4 ml-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              <div
+                className={`${
+                  openDropdown === "learn" ? "block" : "hidden"
+                } absolute top-full left-0 bg-white border text-gray-700 rounded-md shadow-lg min-w-max z-10`}
+              >
+                <ul className="py-2">
+                  <li>
+                    <a
+                      href="#product1"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Help Center
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#product2"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Docs
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <a
+                href="#pricing"
+                className="block py-2 text-gray-700 hover:text-blue-600"
+              >
+                Pricing
+              </a>
+            </li>
+            <li>
+              <a
+                href="#demo"
+                className="block py-2 text-gray-700 hover:text-blue-600"
+              >
+                Demo
+              </a>
+            </li>
+          </ul>
         </div>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-6">
-          <Dropdown
-            label="Products"
-            items={[
-              { label: "Regulus Cloud", href: "#product1" },
-              {
-                label: "Regulus Self Hosted Community Edition",
-                href: "#product2",
-              },
-              {
-                label: "Regulus Self Hosted Enterprise Edition",
-                href: "#product3",
-              },
-            ]}
-          />
-          <Dropdown
-            label="Features"
-            items={[
-              {
-                label: "Real-Time Transaction Monitoring",
-                description:
-                  "Effortlessly track and evaluate transactions with predefined and custom rules for unmatched security.",
-                href: "#feat1",
-              },
-              {
-                label: "Customizable Alerts",
-                description:
-                  "Receive instant notifications via Slack, OpsGenie, Email, or Webhook whenever suspicious activities are detected.",
-                href: "#feat2",
-              },
-              {
-                label: "No-Code Rule Builder",
-                description:
-                  "Design and implement custom monitoring rules through an intuitive, no-code interface.",
-                href: "#feat3",
-              },
-              {
-                label: "Global Compliance Coverage",
-                description:
-                  "Ensure compliance with regulatory requirements in over 25 jurisdictions worldwide.",
-                href: "#feat4",
-              },
-              {
-                label: "API and Integration Support",
-                description:
-                  "Seamlessly integrate Regulus with your CI/CD pipeline and popular tools in your tech stack.",
-                href: "#feat5",
-              },
-            ]}
-          />
-          <Dropdown
-            label="Learn"
-            items={[
-              { label: "Help Center", href: "#product1" },
-              {
-                label: "Docs",
-                href: "#product2",
-              },
-            ]}
-          />
-          <a href="#pricing" className="text-gray-700 hover:text-blue-600">
-            Pricing
-          </a>
-          <a href="#demo" className="text-gray-700 hover:text-blue-600">
-            Demo
-          </a>
-        </nav>
-
-        {/* Desktop Buttons */}
+        {/* Buttons */}
         <div className="hidden md:flex items-center space-x-4">
           <a
             href="#signin"
-            className="text-gray-700 border border-gray-300 px-4 py-2 rounded-lg hover:bg-gray-100"
+            className="border border-gray-300 px-4 py-2 rounded-md hover:bg-gray-100 text-center text-gray-700"
           >
-            Sign in
+            Sign In
           </a>
-          <button className="bg-blue-400 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-500 flex items-center">
+          <button className="bg-blue-400 text-white px-4 py-2 rounded-md shadow hover:bg-blue-500">
             Get Started
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 ml-1"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
           </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <nav className="md:hidden bg-white shadow-lg px-6 pb-4 mt-2">
-          <Dropdown
-            label="Products"
-            items={[
-              { label: "Product 1", href: "#product1" },
-              { label: "Product 2", href: "#product2" },
-            ]}
-          />
-          <Dropdown
-            label="Features"
-            items={[
-              { label: "Feature 1", href: "#feature1" },
-              { label: "Feature 2", href: "#feature2" },
-            ]}
-          />
-          <Dropdown
-            label="Learn"
-            items={[
-              { label: "Help Center", href: "#feature1" },
-              { label: "Docs", href: "#feature2" },
-            ]}
-          />
-          <a
-            href="#pricing"
-            className="block py-2 text-gray-700 hover:bg-gray-100"
-          >
-            Pricing
-          </a>
-          <a
-            href="#demo"
-            className="block py-2 text-gray-700 hover:bg-gray-100"
-          >
-            Demo
-          </a>
-          <a
-            href="#signin"
-            className="w-full flex justify-center text-gray-700 border border-gray-300 py-2 rounded-lg mt-4 hover:bg-gray-100"
-          >
-            Sign in
-          </a>
-          <button className="block w-full bg-blue-400 text-white px-4 py-2 rounded-lg shadow mt-4 hover:bg-blue-500">
-            Get Started
-          </button>
-        </nav>
-      )}
-    </header>
-  )
-}
-
-const Dropdown = ({ label, items, isMobile }) => {
-  const [isOpen, setIsOpen] = useState(false)
-
-  return (
-    <div className={`relative ${isMobile ? "py-2" : ""}`}>
-      <button
-        className="text-gray-700 hover:text-blue-600 flex items-center justify-between w-full py-2 lg:py-0"
-        onClick={() => setIsOpen(!isOpen)}
-        aria-expanded={isOpen}
-      >
-        {label}
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-4 w-4 ml-1"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M19 9l-7 7-7-7"
-          />
-        </svg>
-      </button>
-      {isOpen && (
-        <div
-          className={`${
-            isMobile ? "block" : "absolute"
-          } left-0 bg-white shadow-lg rounded-lg mt-2 py-2 w-72 z-10`}
-        >
-          {items.map((item, index) => (
-            <a
-              key={index}
-              href={item.href}
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-            >
-              {item.label}
-              {item.description && (
-                <span className="block pt-2 text-xs text-gray-500 hover:bg-gray-100">
-                  {item.description}
-                </span>
+        <div className="md:hidden bg-gray-50">
+          <ul className="space-y-2 p-4">
+            <li>
+              <button
+                className="flex justify-between w-full text-gray-700"
+                onClick={() => handleDropdownClick("products")}
+              >
+                Products
+                <svg
+                  className={`w-4 h-4 ml-1 transform transition-transform ${
+                    openDropdown === "products" ? "rotate-180" : ""
+                  }`}
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              {openDropdown === "products" && (
+                <ul className="pl-4 mt-2 space-y-2">
+                  <li>
+                    <a href="#product1" className="block text-gray-700">
+                      Regulus Cloud
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#product2" className="block text-gray-700">
+                      Regulus Self Hosted Community Edition
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#product3" className="block text-gray-700">
+                      Regulus Self Hosted Enterprise Edition
+                    </a>
+                  </li>
+                </ul>
               )}
-            </a>
-          ))}
+            </li>
+            <li>
+              <button
+                className="flex justify-between w-full text-gray-700"
+                onClick={() => handleDropdownClick("features")}
+              >
+                Features
+                <svg
+                  className={`w-4 h-4 ml-1 transform transition-transform ${
+                    openDropdown === "features" ? "rotate-180" : ""
+                  }`}
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              {openDropdown === "features" && (
+                <ul className="pl-4 mt-2 space-y-2">
+                  <li>
+                    <a href="#feature1" className="block text-gray-700">
+                      Real-Time Transaction Monitoring
+                      <p className="text-gray-600 text-xs max-w-sm">
+                        Effortlessly track and evaluate transactions with
+                        predefined and custom rules for unmatched security.
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#feature2" className="block text-gray-700">
+                      Customizable Alerts
+                      <p className="text-gray-600 text-xs max-w-sm">
+                        Receive instant notifications via Slack, OpsGenie,
+                        Email, or Webhook whenever suspicious activities are
+                        detected.
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#feature3" className="block text-gray-700">
+                      No-Code Rule Builder
+                      <p className="text-gray-600 text-xs max-w-sm">
+                        Design and implement custom monitoring rules through an
+                        intuitive, no-code interface.
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#feature3" className="block text-gray-700">
+                      Global Compliance Coverage
+                      <p className="text-gray-600 text-xs max-w-sm">
+                        Ensure compliance with regulatory requirements in
+                        different jurisdictions worldwide.
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#feature3" className="block text-gray-700">
+                      API and Integration Support
+                      <p className="text-gray-600 text-xs max-w-sm">
+                        Seamlessly integrate Regulus with your CI/CD pipeline
+                        and popular tools in your tech stack.
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              )}
+            </li>
+            <li>
+              <button
+                className="flex justify-between w-full text-gray-700"
+                onClick={() => handleDropdownClick("learn")}
+              >
+                Learn
+                <svg
+                  className={`w-4 h-4 ml-1 transform transition-transform ${
+                    openDropdown === "learn" ? "rotate-180" : ""
+                  }`}
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              {openDropdown === "learn" && (
+                <ul className="pl-4 mt-2 space-y-2">
+                  <li>
+                    <a href="#product1" className="block text-gray-700">
+                      Help Center
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#product2" className="block text-gray-700">
+                      Docs
+                    </a>
+                  </li>
+                </ul>
+              )}
+            </li>
+            <li>
+              <a href="#pricing" className="block text-gray-700">
+                Pricing
+              </a>
+            </li>
+            <li>
+              <a href="#demo" className="block text-gray-700">
+                Demo
+              </a>
+            </li>
+            <li>
+              <a
+                href="#signin"
+                className="block w-full text-center font-bold hover:text-blue-700 transition text-gray-700 border border-gray-300 px-4 py-2 rounded hover:bg-gray-100"
+              >
+                Sign In
+              </a>
+            </li>
+            <li>
+              <button className="bg-blue-400 text-white w-full py-2 rounded-md mt-2">
+                Get Started
+              </button>
+            </li>
+          </ul>
         </div>
       )}
-    </div>
+    </nav>
   )
 }
 
