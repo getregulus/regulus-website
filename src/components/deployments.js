@@ -8,7 +8,7 @@ const Deployments = () => {
       description:
         "We handle all maintenance and scalability so you can focus on your operations. Detect and resolve issues instantly with usage-based pricing that grows with you.",
       buttonText: "Learn More",
-      link: "/soon",
+      link: "https://app.getregulus.co/",
       color: "border-yellow-500",
     },
     {

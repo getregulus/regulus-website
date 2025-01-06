@@ -97,12 +97,12 @@ const Navbar = () => {
               >
                 <ul className="py-2">
                   <li>
-                    <Link
-                      to="/soon"
+                    <a
+                      href="https://app.getregulus.co/"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
                       Regulus Cloud
-                    </Link>
+                    </a>
                   </li>
                   <li>
                     <a
@@ -297,12 +297,12 @@ const Navbar = () => {
 
         {/* Buttons */}
         <div className="hidden md:flex items-center space-x-4">
-          <Link
-            href="/soon"
+          <a
+            href="https://app.getregulus.co/"
             className="border border-gray-300 px-4 py-2 rounded-md hover:bg-gray-100 text-center text-gray-700"
           >
             Sign In
-          </Link>
+          </a>
           <a
             href="https://github.com/getregulus/regulus"
             target="_blank"
@@ -344,9 +344,9 @@ const Navbar = () => {
               {openDropdown === "products" && (
                 <ul className="pl-4 mt-2 space-y-2">
                   <li>
-                    <Link to="/soon" className="block text-gray-700">
+                    <a href="https://app.getregulus.co/" className="block text-gray-700">
                       Regulus Cloud
-                    </Link>
+                    </a>
                   </li>
                   <li>
                     <a
@@ -494,12 +494,12 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link
-                to="/soon"
+              <a
+                href="https://app.getregulus.co/"
                 className="block w-full text-center font-bold hover:text-blue-700 transition text-gray-700 border border-gray-300 px-4 py-2 rounded hover:bg-gray-100"
               >
                 Sign In
-              </Link>
+              </a>
             </li>
             <li>
               <Link

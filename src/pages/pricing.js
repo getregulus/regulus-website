@@ -61,7 +61,7 @@ const plansData = {
       ],
       button: {
         text: "Get Started",
-        link: "/soon",
+        link: "https://app.getregulus.co/",
       },
     },
     {
@@ -78,7 +78,7 @@ const plansData = {
       ],
       button: {
         text: "Request a Trial",
-        link: "#",
+        link: "https://app.getregulus.co/",
       },
     },
   ],
