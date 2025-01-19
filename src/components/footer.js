@@ -29,7 +29,10 @@ const Footer = () => (
             <h3 className="text-gray-800 font-bold mb-3">Products</h3>
             <ul className="space-y-2 text-gray-600 text-sm flex-1">
               <li>
-                <a href="https://app.getregulus.co/" className="hover:text-gray-800">
+                <a
+                  href="https://app.getregulus.co/"
+                  className="hover:text-gray-800"
+                >
                   Regulus Cloud
                 </a>
               </li>
@@ -49,13 +52,23 @@ const Footer = () => (
             <h3 className="text-gray-800 font-bold mb-3">Learn</h3>
             <ul className="space-y-2 text-gray-600 text-sm flex-1">
               <li>
-                <a href="#help-center" className="hover:text-gray-800">
-                  Help Center
+                <a href="/docs" className="hover:text-gray-800">
+                  Docs
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="flex flex-col">
+            <h3 className="text-gray-800 font-bold mb-3">Social</h3>
+            <ul className="space-y-2 text-gray-600 text-sm flex-1">
+              <li>
+                <a href="#privacy" className="hover:text-gray-800">
+                  Twitter
                 </a>
               </li>
               <li>
-                <a href="#docs" className="hover:text-gray-800">
-                  Docs
+                <a href="#terms" className="hover:text-gray-800">
+                  Linkedin
                 </a>
               </li>
             </ul>

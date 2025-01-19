@@ -20,7 +20,7 @@ const Features = () => {
     {
       title: "Seamless Integration",
       description:
-        "Easily integrate Regulus with tools like OpsGenie, Email, Slack, and Prometheus for a cohesive workflow.",
+        "Easily integrate Regulus with tools like Email, Slack, and more for a cohesive workflow.",
     },
   ]
 

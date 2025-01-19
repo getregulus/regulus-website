@@ -99,6 +99,7 @@ const Navbar = () => {
                   <li>
                     <a
                       href="https://app.getregulus.co/"
+                      target="_blank"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
                       Regulus Cloud
@@ -259,18 +260,18 @@ const Navbar = () => {
                 <ul className="py-2">
                   <li>
                     <Link
-                      href="#product1"
+                      href="/docs"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
-                      Help Center
+                      Docs
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="#product2"
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      href=""
+                      className="block px-4 py-2 hover:bg-gray-100 text-indigo-500"
                     >
-                      Docs
+                      Join Discord Channel
                     </Link>
                   </li>
                 </ul>
@@ -344,7 +345,10 @@ const Navbar = () => {
               {openDropdown === "products" && (
                 <ul className="pl-4 mt-2 space-y-2">
                   <li>
-                    <a href="https://app.getregulus.co/" className="block text-gray-700">
+                    <a
+                      href="https://app.getregulus.co/"
+                      className="block text-gray-700"
+                    >
                       Regulus Cloud
                     </a>
                   </li>
@@ -471,14 +475,14 @@ const Navbar = () => {
               {openDropdown === "learn" && (
                 <ul className="pl-4 mt-2 space-y-2">
                   <li>
-                    <Link to="#product1" className="block text-gray-700">
-                      Help Center
+                    <Link to="/docs" className="block text-gray-700">
+                      Docs
                     </Link>
                   </li>
                   <li>
-                    <Link to="#product2" className="block text-gray-700">
-                      Docs
-                    </Link>
+                    <a href="" className="text-indigo-500">
+                      Join Discord Channel
+                    </a>
                   </li>
                 </ul>
               )}
@@ -501,10 +505,10 @@ const Navbar = () => {
                 Sign In
               </a>
             </li>
-            <li>
+            <li className="w-full">
               <Link
                 to="https://github.com/getregulus/regulus"
-                className="bg-blue-400 text-white w-full py-2 rounded-md mt-2"
+                className="bg-blue-400 text-white w-full py-2 rounded-md mt-2 block text-center"
               >
                 Get Started
               </Link>
