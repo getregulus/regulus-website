@@ -1,4 +1,5 @@
 import React from "react"
+
 const Hero = ({ title, subtitle }) => (
   <section className="py-10 lg:py-20">
     <div className="max-w-7xl mx-auto px-6 text-center flex flex-col items-center">

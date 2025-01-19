@@ -1,8 +1,8 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Navbar from './navbar'
-import Footer from './footer'
+import Navbar from '@components/navbar'
+import Footer from '@components/footer'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

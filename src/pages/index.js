@@ -1,10 +1,10 @@
 import React from "react"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Layout from "@components/layout"
+import Seo from "@components/seo"
 
-import Hero from "../components/hero"
-import Features from "../components/features"
-import Deployments from "../components/deployments"
+import Hero from "@components/hero"
+import Features from "@components/features"
+import Deployments from "@components/deployments"
 
 const IndexPage = () => (
   <Layout>

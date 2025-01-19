@@ -58,5 +58,17 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: "gatsby-plugin-alias-imports",
+      options: {
+        alias: {
+          "@components": "src/components",
+          "@images": "src/images",
+          "@api": "src/pages/api",
+          "@utils": "src/utils",
+        },
+        extensions: ["js", "jsx", "ts", "tsx"],
+      },
+    },
   ],
 }

@@ -1,6 +1,6 @@
 import React from 'react';
-import DocLayout from '../../components/doc-layout';
-import Seo from '../../components/seo';
+import DocLayout from '@components/doc-layout';
+import Seo from '@components/seo';
 
 const breadcrumbPath = [
     { label: "Docs", href: "/docs" },

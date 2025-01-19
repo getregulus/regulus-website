@@ -1,9 +1,9 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Navbar from "./navbar"
-import Footer from "./footer"
-import Menu from "./menu"
-import Breadcrumb from "./breadcrumb"
+import Navbar from "@components/navbar"
+import Footer from "@components/footer"
+import Menu from "@components/menu"
+import Breadcrumb from "@components/breadcrumb"
 
 const DocLayout = ({ children, breadcrumbPath }) => {
   const data = useStaticQuery(graphql`
@@ -77,7 +77,7 @@ const DocLayout = ({ children, breadcrumbPath }) => {
         { label: "Transactions API", href: "/docs/api-docs/transactions-api" },
         { label: "Rules API", href: "/docs/api-docs/rules-api" },
         { label: "Alerts API", href: "/docs/api-docs/alerts-api" },
-        { label: "Audit API", href: "/docs/api-docs/audit-api" },  
+        { label: "Audit API", href: "/docs/api-docs/audit-api" },
         { label: "Watchlist API", href: "/docs/api-docs/watchlist-api" },
       ],
     },

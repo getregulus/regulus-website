@@ -59,21 +59,6 @@ const Footer = () => (
             </ul>
           </div>
           <div className="flex flex-col">
-            <h3 className="text-gray-800 font-bold mb-3">Social</h3>
-            <ul className="space-y-2 text-gray-600 text-sm flex-1">
-              <li>
-                <a href="#privacy" className="hover:text-gray-800">
-                  Twitter
-                </a>
-              </li>
-              <li>
-                <a href="#terms" className="hover:text-gray-800">
-                  Linkedin
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="flex flex-col">
             <h3 className="text-gray-800 font-bold mb-3">Legal</h3>
             <ul className="space-y-2 text-gray-600 text-sm flex-1">
               <li>

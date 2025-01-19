@@ -1,6 +1,6 @@
 import React from "react"
-import DocLayout from "../../components/doc-layout"
-import Seo from "../../components/seo"
+import DocLayout from "@components/doc-layout"
+import Seo from "@components/seo"
 
 const breadcrumbPath = [
   { label: "Docs", href: "/docs" },
@@ -10,6 +10,24 @@ const breadcrumbPath = [
 const Integrations = () => {
   return (
     <DocLayout breadcrumbPath={breadcrumbPath}>
+      <Seo
+        title="Integrations"
+        description="Discover how to integrate Regulus with third-party tools and services. Enhance your blockchain monitoring workflows with seamless integrations."
+        keywords={[
+          "Integrations",
+          "Regulus Integrations",
+          "Blockchain Integrations",
+          "Third-Party Tools",
+          "Workflow Automation",
+          "Regulus Documentation",
+        ]}
+      >
+        <meta
+          property="og:url"
+          content="https://getregulus.co/docs/integrations"
+        />
+      </Seo>
+
       <main className="flex-grow">
         <section className="py-4">
           <div className="max-w-7xl mx-auto">

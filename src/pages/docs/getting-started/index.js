@@ -1,6 +1,6 @@
 import React from "react"
-import DocLayout from "../../../components/doc-layout"
-import Seo from "../../../components/seo"
+import DocLayout from "@components/doc-layout"
+import Seo from "@components/seo"
 
 const breadcrumbPath = [
   { label: "Docs", href: "/docs" },
@@ -11,18 +11,23 @@ const GettingStarted = () => {
   return (
     <DocLayout breadcrumbPath={breadcrumbPath}>
       <Seo
-        title="Getting Started with Regulus"
-        description="Learn how to set up and start using Regulus, a blockchain monitoring and alerting platform. Explore self-hosted and cloud options."
+        title="Getting Started"
+        description="Get started with Regulus. Learn how to set up your environment, configure blockchain monitoring, and explore key features."
+        keywords={[
+          "Getting Started",
+          "Regulus Setup",
+          "Blockchain Monitoring Setup",
+          "Regulus Features",
+          "Blockchain Integration",
+          "Regulus Documentation",
+        ]}
       >
-        <meta
-          name="keywords"
-          content="Regulus, Getting Started, Blockchain Monitoring, Self-Hosted, Cloud"
-        />
         <meta
           property="og:url"
           content="https://getregulus.co/docs/getting-started"
         />
       </Seo>
+
       <main className="flex-grow">
         <section className="py-4">
           <div className="max-w-7xl mx-auto">
@@ -80,10 +85,7 @@ const GettingStarted = () => {
                   </li>
                   <li>
                     Other settings as specified in the{" "}
-                    <a
-                      href=""
-                      className="text-blue-600 hover:underline"
-                    >
+                    <a href="" className="text-blue-600 hover:underline">
                       Configuration Guide
                     </a>
                     .
@@ -162,28 +164,19 @@ const GettingStarted = () => {
             </h2>
             <ul className="list-disc list-inside text-gray-700 space-y-2">
               <li>
-                <a
-                  href=""
-                  className="text-blue-600 hover:underline"
-                >
+                <a href="" className="text-blue-600 hover:underline">
                   Authentication
                 </a>{" "}
                 - Learn how to configure and use token-based authentication.
               </li>
               <li>
-                <a
-                  href=""
-                  className="text-blue-600 hover:underline"
-                >
+                <a href="" className="text-blue-600 hover:underline">
                   API Reference
                 </a>{" "}
                 - Detailed documentation on Regulus API endpoints.
               </li>
               <li>
-                <a
-                  href=""
-                  className="text-blue-600 hover:underline"
-                >
+                <a href="" className="text-blue-600 hover:underline">
                   Error Handling
                 </a>{" "}
                 - Guide to debugging and resolving common errors.

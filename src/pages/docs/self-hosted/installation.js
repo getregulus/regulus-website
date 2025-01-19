@@ -1,16 +1,34 @@
 import React from "react"
-import DocLayout from "../../../components/doc-layout"
-import Seo from "../../../components/seo"
+import DocLayout from "@components/doc-layout"
+import Seo from "@components/seo"
 
 const breadcrumbPath = [
-    { label: "Docs", href: "/docs" },
-    { label: "Self Hosted", href: "/docs/self-hosted" },
-    { label: "Installation" },
+  { label: "Docs", href: "/docs" },
+  { label: "Self Hosted", href: "/docs/self-hosted" },
+  { label: "Installation" },
 ]
 
 const Installation = () => {
   return (
     <DocLayout breadcrumbPath={breadcrumbPath}>
+      <Seo
+        title="Self-Hosted Installation"
+        description="Learn how to install the self-hosted version of Regulus. Follow step-by-step instructions to set up Regulus on your own infrastructure."
+        keywords={[
+          "Self-Hosted Installation",
+          "Regulus Installation",
+          "Self-Hosted Regulus",
+          "Blockchain Monitoring Setup",
+          "Regulus Deployment Guide",
+          "Regulus Documentation",
+        ]}
+      >
+        <meta
+          property="og:url"
+          content="https://getregulus.co/docs/self-hosted/installation"
+        />
+      </Seo>
+
       <main className="flex-grow">
         <section className="py-4">
           <div className="max-w-7xl mx-auto">

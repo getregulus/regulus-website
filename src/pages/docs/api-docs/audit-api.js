@@ -1,6 +1,6 @@
 import React from "react"
-import DocLayout from "../../../components/doc-layout"
-import Seo from "../../../components/seo"
+import DocLayout from "@components/doc-layout"
+import Seo from "@components/seo"
 
 const breadcrumbPath = [
   { label: "Docs", href: "/docs" },
@@ -11,6 +11,22 @@ const breadcrumbPath = [
 const AuditApi = () => {
   return (
     <DocLayout breadcrumbPath={breadcrumbPath}>
+      <Seo
+        title="Audit API"
+        description="Discover the Audit API for Regulus. Learn how to retrieve and analyze audit logs for blockchain transaction activities."
+        keywords={[
+          "Audit API",
+          "Blockchain Logs",
+          "Audit Logs",
+          "Transaction Monitoring",
+          "Regulus API Documentation",
+        ]}
+      >
+        <meta
+          property="og:url"
+          content="https://getregulus.co/docs/api-docs/audit-api"
+        />
+      </Seo>
       <main className="flex-grow">
         <section className="py-4">
           <div className="max-w-7xl mx-auto">
