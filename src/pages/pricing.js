@@ -25,7 +25,7 @@ const plansData = {
       ],
       button: {
         text: "Installation On GitHub",
-        link: "https://github.com/getregulus/regulus",
+        link: "https://github.com/getregulus/",
       },
     },
     {

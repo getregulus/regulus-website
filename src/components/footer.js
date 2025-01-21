@@ -38,7 +38,7 @@ const Footer = () => (
               </li>
               <li>
                 <a
-                  href="https://github.com/getregulus/regulus"
+                  href="https://github.com/getregulus/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-gray-800"

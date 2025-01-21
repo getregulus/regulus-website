@@ -16,7 +16,7 @@ const Deployments = () => {
       description:
         "Take full control by hosting Regulus on your infrastructure. Benefit from predictable, node-based pricing and total customization.",
       buttonText: "Learn More",
-      link: "https://github.com/getregulus/regulus",
+      link: "https://github.com/getregulus/",
       color: "border-blue-500",
     },
     /*

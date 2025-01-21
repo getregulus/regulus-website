@@ -107,7 +107,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a
-                      href="https://github.com/getregulus/regulus"
+                      href="https://github.com/getregulus/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block px-4 py-2 hover:bg-gray-100"
@@ -117,7 +117,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a
-                      href="https://github.com/getregulus/regulus"
+                      href="https://github.com/getregulus/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block px-4 py-2 hover:bg-gray-100"
@@ -305,7 +305,7 @@ const Navbar = () => {
             Sign In
           </a>
           <a
-            href="https://github.com/getregulus/regulus"
+            href="https://github.com/getregulus/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-blue-400 text-white px-4 py-2 rounded-md shadow hover:bg-blue-500"
@@ -354,7 +354,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a
-                      href="https://github.com/getregulus/regulus"
+                      href="https://github.com/getregulus/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block text-gray-700"
@@ -364,7 +364,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a
-                      hhref="https://github.com/getregulus/regulus"
+                      href="https://github.com/getregulus/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block text-gray-700"
@@ -507,7 +507,7 @@ const Navbar = () => {
             </li>
             <li className="w-full">
               <Link
-                to="https://github.com/getregulus/regulus"
+                to="https://github.com/getregulus/"
                 className="bg-blue-400 text-white w-full py-2 rounded-md mt-2 block text-center"
               >
                 Get Started

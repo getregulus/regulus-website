@@ -10,7 +10,7 @@ const Hero = ({ title, subtitle }) => (
         {subtitle}
       </p>
       <a
-        href="https://github.com/getregulus/regulus"
+        href="https://github.com/getregulus/"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-blue-400 text-white px-8 py-3 rounded-3xl shadow-lg hover:bg-blue-500 transition duration-300"

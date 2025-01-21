@@ -61,7 +61,7 @@ const SelfHosted = () => {
                 Hosted on your infrastructure (installation at{" "}
                 <Link
                   className="text-blue-500"
-                  to="https://github.com/getregulus/regulus"
+                  to="https://github.com/getregulus"
                 >
                   here
                 </Link>
