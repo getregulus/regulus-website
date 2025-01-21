@@ -17,20 +17,22 @@ const SwaggerChip = ({ method, endpoint, description }) => {
 
   return (
     <div
-      className={`flex items-center p-2 mb-2 border rounded shadow-sm ${containerStyles[method]}`}
+      className={`p-2 mb-2 border rounded shadow-sm ${containerStyles[method]}`}
     >
-      <div
-        className={`w-20 h-8 flex items-center justify-center font-bold text-sm rounded border ${methodStyles[method]}`}
-      >
-        {method}
-      </div>
-      <div className="ml-4 lg:flex items-center">
-        <p className="font-mono font-semibold text-lg text-gray-800 mr-4">
-          {endpoint}
-        </p>
-        <p className="text-gray-600 text-sm flex-grow text-right">
-          {description}
-        </p>
+      <div className="flex items-start sm:items-center sm:flex-row flex-col">
+        <div
+          className={`w-20 h-8 flex items-center justify-center font-bold text-sm rounded border ${methodStyles[method]} mb-2 sm:mb-0 sm:mr-4`}
+        >
+          {method}
+        </div>
+        <div className="flex flex-col sm:flex-row flex-grow">
+          <p className="font-mono font-semibold text-base text-gray-800 mb-2 sm:mb-0 sm:mr-4">
+            {endpoint}
+          </p>
+          <p className="text-gray-600 text-sm flex-grow text-left">
+            {description}
+          </p>
+        </div>
       </div>
     </div>
   )

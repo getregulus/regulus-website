@@ -67,9 +67,13 @@ const GettingStarted = () => {
               <li>
                 <strong>Clone the Repository:</strong> Clone the Regulus
                 repository to your local machine:
-                <code className="bg-gray-100 px-2 py-1 rounded block mt-2">
-                  git clone https://github.com/getregulus/regulus.git
-                </code>
+                <div className="overflow-x-auto my-2 bg-gray-900">
+                  <pre className=" text-gray-200 p-4 rounded w-full">
+                    <code>
+                      git clone https://github.com/getregulus/regulus.git
+                    </code>
+                  </pre>
+                </div>
               </li>
               <li>
                 <strong>Configure Environment Variables:</strong> Create a{" "}
@@ -95,23 +99,31 @@ const GettingStarted = () => {
               <li>
                 <strong>Build and Start the Containers:</strong> Use Docker
                 Compose to build and start the containers:
-                <code className="bg-gray-100 px-2 py-1 rounded block mt-2">
-                  docker-compose up -d
-                </code>
+                <div className="overflow-x-auto my-2 bg-gray-900">
+                  <pre className=" text-gray-200 p-4 rounded w-full">
+                    <code>docker-compose up -d</code>
+                  </pre>
+                </div>
               </li>
               <li>
                 <strong>Run Database Migrations:</strong> Apply database
                 migrations to set up the schema:
-                <code className="bg-gray-100 px-2 py-1 rounded block mt-2">
-                  docker exec regulus-backend npx prisma migrate deploy
-                </code>
+                <div className="overflow-x-auto my-2 bg-gray-900">
+                  <pre className=" text-gray-200 p-4 rounded w-full">
+                    <code>
+                      docker exec regulus-backend npx prisma migrate deploy
+                    </code>
+                  </pre>
+                </div>
               </li>
               <li>
                 <strong>Access the Dashboard:</strong> Open your browser and
                 navigate to:
-                <code className="bg-gray-100 px-2 py-1 rounded block mt-2">
-                  http://localhost:3000
-                </code>
+                <div className="overflow-x-auto my-2 bg-gray-900">
+                  <pre className=" text-gray-200 p-4 rounded w-full">
+                    <code>http://localhost:3000</code>
+                  </pre>
+                </div>
               </li>
             </ol>
 
