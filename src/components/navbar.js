@@ -269,20 +269,18 @@ const Navbar = () => {
 
         {/* Buttons */}
         <div className="hidden md:flex items-center space-x-4">
-          <a
-            href="https://app.getregulus.co/"
+          <Link
+            to="https://app.getregulus.co/login"
             className="border border-gray-300 px-4 py-2 rounded-md hover:bg-gray-100 text-center text-gray-700"
           >
             Sign In
-          </a>
-          <a
-            href="https://github.com/getregulus/"
-            target="_blank"
-            rel="noopener noreferrer"
+          </Link>
+          <Link
+            to="https://app.getregulus.co/register"
             className="bg-blue-400 text-white px-4 py-2 rounded-md shadow hover:bg-blue-500"
           >
             Get Started
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -446,16 +444,16 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <a
-                href="https://app.getregulus.co/"
+              <Link
+                to="https://app.getregulus.co/login"
                 className="block w-full text-center font-bold hover:text-blue-700 transition text-gray-700 border border-gray-300 px-4 py-2 rounded hover:bg-gray-100"
               >
                 Sign In
-              </a>
+              </Link>
             </li>
             <li className="w-full">
               <Link
-                to="https://github.com/getregulus/"
+                to="https://app.getregulus.co/register"
                 className="bg-blue-400 text-white w-full py-2 rounded-md mt-2 block text-center"
               >
                 Get Started

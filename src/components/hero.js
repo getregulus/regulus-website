@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const Hero = ({ title, subtitle }) => (
   <section className="py-10 lg:py-20">
@@ -9,14 +10,12 @@ const Hero = ({ title, subtitle }) => (
       <p className="max-w-2xl text-gray-700 text-sm sm:text-base lg:text-lg mb-8 leading-relaxed">
         {subtitle}
       </p>
-      <a
-        href="https://github.com/getregulus/"
-        target="_blank"
-        rel="noopener noreferrer"
+      <Link
+        to="https://app.getregulus.co/register"
         className="bg-blue-400 text-white px-8 py-3 rounded-3xl shadow-lg hover:bg-blue-500 transition duration-300"
       >
         Get Started
-      </a>
+      </Link>
     </div>
   </section>
 )
