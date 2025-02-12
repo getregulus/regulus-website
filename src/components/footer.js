@@ -77,7 +77,7 @@ const Footer = () => (
             <h3 className="text-gray-800 font-bold mb-3">Social</h3>
             <ul className="space-y-2 text-gray-600 text-sm flex-1">
               <li>
-                <a href="https://www.linkedin.com/showcase/getregulus" target="_blank" className="hover:text-gray-800">
+                <a href="https://www.linkedin.com/company/get-regulus/" target="_blank" className="hover:text-gray-800">
                   Linkedin
                 </a>
               </li>
