@@ -5,20 +5,20 @@ import Seo from "@components/seo"
 const breadcrumbPath = [
   { label: "Docs", href: "/docs" },
   { label: "Getting Started", href: "/docs/gettting-started" },
-  { label: "Service Map" },
+  { label: "No-Code Workflow Builder" },
 ]
 
-const ServiceMap = () => {
+const WorkflowBuilder = () => {
   return (
     <DocLayout breadcrumbPath={breadcrumbPath}>
       <Seo
-        title="Getting Started with Service Map"
-        description="Explore the Service Map feature in Regulus. Learn how to visualize blockchain monitoring workflows and map key services for better insights."
+        title="Getting Started with No-Code Workflow Builder"
+        description="Explore the No-Code Workflow Builder feature in Regulus. Learn how to visualize blockchain monitoring workflows and map key services for better insights."
         keywords={[
-          "Service Map",
+          "No-Code Workflow Builder",
           "Blockchain Monitoring Map",
           "Visualize Workflows",
-          "Regulus Service Map",
+          "Regulus No-Code Workflow Builder",
           "Regulus Documentation",
           "Blockchain Insights",
         ]}
@@ -43,4 +43,4 @@ const ServiceMap = () => {
   )
 }
 
-export default ServiceMap
+export default WorkflowBuilder

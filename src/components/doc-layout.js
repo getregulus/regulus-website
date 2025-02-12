@@ -24,7 +24,7 @@ const DocLayout = ({ children, breadcrumbPath }) => {
       href: "/docs/getting-started/",
       children: [
         { label: "Organizations", href: "/docs/getting-started/organizations" },
-        { label: "Service Map", href: "/docs/getting-started/service-map" },
+        { label: "No-Code Workflow Builder", href: "/docs/getting-started/workflow-builder" },
       ],
     },
     {

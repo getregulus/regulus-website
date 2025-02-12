@@ -170,9 +170,8 @@ const Navbar = () => {
                     >
                       Customizable Alerts
                       <p className="text-gray-600 text-xs max-w-sm">
-                        Receive instant notifications via Slack, OpsGenie,
-                        Email, or Webhook whenever suspicious activities are
-                        detected.
+                        Receive instant notifications via Slack, Email, or
+                        Webhook whenever suspicious activities are detected.
                       </p>
                     </a>
                   </li>
@@ -181,10 +180,12 @@ const Navbar = () => {
                       href="#feature2"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
-                      No-Code Rule Builder
+                      No-Code Workflow Builder
                       <p className="text-gray-600 text-xs max-w-sm">
-                        Design and implement custom monitoring rules through an
-                        intuitive, no-code interface.
+                        Easily create, arrange, and modify workflows within the
+                        monitoring map using an intuitive, no-code
+                        interface—customize rules seamlessly without technical
+                        expertise.
                       </p>
                     </a>
                   </li>
@@ -197,18 +198,6 @@ const Navbar = () => {
                       <p className="text-gray-600 text-xs max-w-sm">
                         Ensure compliance with regulatory requirements in
                         different jurisdictions worldwide.
-                      </p>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#feature2"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      API and Integration Support
-                      <p className="text-gray-600 text-xs max-w-sm">
-                        Seamlessly integrate Regulus with your CI/CD pipeline
-                        and popular tools in your tech stack.
                       </p>
                     </a>
                   </li>
@@ -273,14 +262,6 @@ const Navbar = () => {
                 <a className="block py-2 text-gray-700 hover:text-blue-600">
                   Pricing
                 </a>
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#demo"
-                className="block py-2 text-gray-700 hover:text-blue-600"
-              >
-                Demo
               </Link>
             </li>
           </ul>
@@ -393,18 +374,19 @@ const Navbar = () => {
                     <Link to="#feature2" className="block text-gray-700">
                       Customizable Alerts
                       <p className="text-gray-600 text-xs max-w-sm">
-                        Receive instant notifications via Slack, OpsGenie,
-                        Email, or Webhook whenever suspicious activities are
-                        detected.
+                        Receive instant notifications via Slack, Email, or
+                        Webhook whenever suspicious activities are detected.
                       </p>
                     </Link>
                   </li>
                   <li>
                     <Link to="#feature3" className="block text-gray-700">
-                      No-Code Rule Builder
+                      No-Code Workflow Builder
                       <p className="text-gray-600 text-xs max-w-sm">
-                        Design and implement custom monitoring rules through an
-                        intuitive, no-code interface.
+                        Easily create, arrange, and modify workflows within the
+                        monitoring map using an intuitive, no-code
+                        interface—customize rules seamlessly without technical
+                        expertise.
                       </p>
                     </Link>
                   </li>
@@ -414,15 +396,6 @@ const Navbar = () => {
                       <p className="text-gray-600 text-xs max-w-sm">
                         Ensure compliance with regulatory requirements in
                         different jurisdictions worldwide.
-                      </p>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="#feature3" className="block text-gray-700">
-                      API and Integration Support
-                      <p className="text-gray-600 text-xs max-w-sm">
-                        Seamlessly integrate Regulus with your CI/CD pipeline
-                        and popular tools in your tech stack.
                       </p>
                     </Link>
                   </li>
@@ -470,11 +443,6 @@ const Navbar = () => {
             <li>
               <Link to="/pricing">
                 <a className="block text-gray-700">Pricing</a>
-              </Link>
-            </li>
-            <li>
-              <Link to="#demo" className="block text-gray-700">
-                Demo
               </Link>
             </li>
             <li>
