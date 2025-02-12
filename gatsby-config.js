@@ -4,10 +4,6 @@
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
  */
 
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
-
 require("dotenv").config({
   path: `.env`,
 })
@@ -19,7 +15,7 @@ module.exports = {
         background, detecting and alerting suspicious activities so you can
         focus on driving innovation and growth.`,
     author: `@gregulus`,
-    siteUrl: `https://getregulus.co/`,
+    siteUrl: `https://getregulus.co`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -41,9 +37,6 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/thumbnail-white.png`,
       },
@@ -68,6 +61,25 @@ module.exports = {
           "@utils": "src/utils",
         },
         extensions: ["js", "jsx", "ts", "tsx"],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/sitemap.xml`,
+        exclude: [
+          `/404`,
+          `/404.html`,
+          `/dev-404-page`,
+          `/offline-plugin-app-shell-fallback`,
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        policy: [{ userAgent: "*", allow: "/" }],
+        sitemap: "https://getregulus.co/sitemap.xml",
       },
     },
   ],
