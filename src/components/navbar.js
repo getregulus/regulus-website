@@ -115,16 +115,6 @@ const Navbar = () => {
                       Regulus Self Hosted Community Edition
                     </a>
                   </li>
-                  <li>
-                    <a
-                      href="https://github.com/getregulus/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      Regulus Self Hosted Enterprise Edition
-                    </a>
-                  </li>
                 </ul>
               </div>
             </li>
@@ -360,16 +350,6 @@ const Navbar = () => {
                       className="block text-gray-700"
                     >
                       Regulus Self Hosted Community Edition
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://github.com/getregulus/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block text-gray-700"
-                    >
-                      Regulus Self Hosted Enterprise Edition
                     </a>
                   </li>
                 </ul>

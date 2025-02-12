@@ -37,13 +37,13 @@ const SelfHosted = () => {
               Self-Hosted Regulus Platform
             </h1>
 
-            <p className="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
+            <p className="text-gray-700 text-base mb-6 leading-relaxed">
               The Regulus Platform offers unparalleled security and monitoring
               capabilities for Web3 transactions. It is available in two
               configurations:
             </p>
             <ul className="list-disc list-inside space-y-4 mb-6">
-              <li className="text-gray-700 text-base sm:text-lg">
+              <li className="text-gray-700 text-base">
                 <span className="font-semibold text-gray-800">Cloud:</span>{" "}
                 Hosted on Regulus servers (available at{" "}
                 <Link
@@ -54,7 +54,7 @@ const SelfHosted = () => {
                 </Link>
                 )
               </li>
-              <li className="text-gray-700 text-base sm:text-lg">
+              <li className="text-gray-700 text-base">
                 <span className="font-semibold text-gray-800">
                   Self-Hosted:
                 </span>{" "}
@@ -72,7 +72,7 @@ const SelfHosted = () => {
             <h2 className="text-gray-800 text-xl sm:text-2xl font-medium mb-8">
               Overview
             </h2>
-            <p className="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
+            <p className="text-gray-700 text-base mb-6 leading-relaxed">
               The Self-Hosted version of Regulus is designed for organizations
               requiring complete control over their monitoring infrastructure.
               This solution offers the same powerful features as the
@@ -85,26 +85,26 @@ const SelfHosted = () => {
               Features
             </h2>
             <ul className="list-disc list-inside space-y-4 mb-6">
-              <li className="text-gray-700 text-base sm:text-lg">
+              <li className="text-gray-700 text-base">
                 <span className="font-semibold text-gray-800">
                   Broad Compatibility:
                 </span>{" "}
                 Supports Arm64 and Amd64 architectures for Linux and macOS
                 environments.
               </li>
-              <li className="text-gray-700 text-base sm:text-lg">
+              <li className="text-gray-700 text-base">
                 <span className="font-semibold text-gray-800">
                   Containerized Deployment:
                 </span>{" "}
                 Fully Dockerized to simplify setup and reduce dependency
                 management overhead.
               </li>
-              <li className="text-gray-700 text-base sm:text-lg">
+              <li className="text-gray-700 text-base">
                 <span className="font-semibold text-gray-800">Easy Setup:</span>{" "}
                 Automated installation with Docker Compose for seamless
                 deployment.
               </li>
-              <li className="text-gray-700 text-base sm:text-lg">
+              <li className="text-gray-700 text-base">
                 <span className="font-semibold text-gray-800">
                   Real-Time Monitoring:
                 </span>{" "}
@@ -112,7 +112,7 @@ const SelfHosted = () => {
                 audit logs and transaction tracking.
               </li>
 
-              <li className="text-gray-700 text-base sm:text-lg">
+              <li className="text-gray-700 text-base">
                 <span className="font-semibold text-gray-800">
                   Enhanced Security:
                 </span>{" "}
@@ -124,18 +124,18 @@ const SelfHosted = () => {
             <h2 className="text-gray-800 text-xl sm:text-2xl font-medium mb-8">
               Editions
             </h2>
-            <p className="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
+            <p className="text-gray-700 text-base mb-6 leading-relaxed">
               The Regulus Self-Hosted Platform is available in two editions:
             </p>
             <ul className="list-disc list-inside space-y-4 mb-6">
-              <li className="text-gray-700 text-base sm:text-lg">
+              <li className="text-gray-700 text-base">
                 <span className="font-semibold text-gray-800">
                   Community Edition:
                 </span>{" "}
                 Ideal for small teams or pilot projects, including essential
                 monitoring features.
               </li>
-              <li className="text-gray-700 text-base sm:text-lg">
+              <li className="text-gray-700 text-base">
                 <span className="font-semibold text-gray-800">
                   Enterprise Edition:
                 </span>{" "}
@@ -144,7 +144,7 @@ const SelfHosted = () => {
               </li>
             </ul>
 
-            <p className="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
+            <p className="text-gray-700 text-base mb-6 leading-relaxed">
               For a detailed comparison between the editions, refer to our{" "}
               <Link
                 to="https://getregulus.co/pricing/"
@@ -159,13 +159,13 @@ const SelfHosted = () => {
               Deployment Options
             </h2>
             <ul className="list-disc list-inside space-y-4 mb-6">
-              <li className="text-gray-700 text-base sm:text-lg">
+              <li className="text-gray-700 text-base">
                 <span className="font-semibold text-gray-800">
                   On-Premises Deployment:
                 </span>{" "}
                 For environments requiring complete isolation.
               </li>
-              <li className="text-gray-700 text-base sm:text-lg">
+              <li className="text-gray-700 text-base">
                 <span className="font-semibold text-gray-800">
                   Cloud-Based Deployment:
                 </span>{" "}
@@ -174,7 +174,7 @@ const SelfHosted = () => {
               </li>
             </ul>
 
-            <p className="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
+            <p className="text-gray-700 text-base mb-6 leading-relaxed">
               Ready to deploy Regulus Self-Hosted? Get started by following the{" "}
               <Link
                 to="https://getregulus.co/docs/self-hosted/installation/"

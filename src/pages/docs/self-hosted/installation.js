@@ -39,7 +39,7 @@ const Installation = () => {
             <h2 className="text-gray-800 text-xl sm:text-2xl font-medium mb-6">
               Introduction
             </h2>
-            <p className="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
+            <p className="text-gray-700 text-base mb-6 leading-relaxed">
               This guide provides detailed instructions for installing the
               self-hosted version of Regulus. By hosting Regulus on your own
               infrastructure, you gain greater control, enhanced customization,

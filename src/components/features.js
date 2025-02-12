@@ -88,8 +88,8 @@ const FeatureCard = ({ image, title, description }) => (
   <div className="bg-white rounded-lg shadow hover:shadow-xl transition duration-300 w-full max-w-3xl mx-auto">
     <div className="w-full flex justify-center items-center mb-4">{image}</div>
     <div className="p-6">
-      <h3 className="text-2xl font-bold mb-2 text-gray-800">{title}</h3>
-      <p className="text-gray-600 text-lg">{description}</p>
+      <h3 className="text-xl font-bold mb-2 text-gray-800">{title}</h3>
+      <p className="text-gray-600 text-sm sm:text-base">{description}</p>
     </div>
   </div>
 )

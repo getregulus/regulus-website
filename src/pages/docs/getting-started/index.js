@@ -35,7 +35,7 @@ const GettingStarted = () => {
             <h1 className="text-gray-800 text-2xl sm:text-3xl font-medium mb-6 leading-relaxed">
               Getting Started
             </h1>
-            <p className="text-gray-700 text-base sm:text-lg mb-8">
+            <p className="text-gray-700 text-base mb-8">
               Welcome to Regulus! Follow this guide to set up and start
               monitoring blockchain transactions with ease. This section
               provides steps for both self-hosted and cloud-hosted versions of
@@ -45,7 +45,7 @@ const GettingStarted = () => {
             <h2 className="text-gray-800 text-xl sm:text-2xl font-medium mb-6">
               Self-Hosted Version (Dockerized)
             </h2>
-            <p className="text-gray-700 text-base sm:text-lg mb-4">
+            <p className="text-gray-700 text-base mb-4">
               The Dockerized setup is the recommended method for deploying
               Regulus, providing a streamlined and consistent installation
               experience. Follow these steps:
@@ -61,7 +61,7 @@ const GettingStarted = () => {
             <h2 className="text-gray-800 text-xl sm:text-2xl font-medium my-6">
               Cloud Version
             </h2>
-            <p className="text-gray-700 text-base sm:text-lg mb-4">
+            <p className="text-gray-700 text-base mb-4">
               The cloud-hosted version of Regulus is a managed solution,
               providing scalability and minimal setup effort. It is ideal for
               teams and organizations looking to start quickly without worrying

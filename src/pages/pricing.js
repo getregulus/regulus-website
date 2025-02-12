@@ -28,22 +28,6 @@ const plansData = {
         link: "https://github.com/getregulus/",
       },
     },
-    {
-      title: "Enterprise Edition",
-      price: "",
-      description: "Best for big teams",
-      features: [
-        "All Features From the Community Edition",
-        "Single-Sign On (SSO)",
-        "Watchlist Matching",
-        "7x24 Support",
-        "Custom Pricing",
-      ],
-      button: {
-        text: "Request a Trial",
-        link: "#",
-      },
-    },
   ],
   cloud: [
     {

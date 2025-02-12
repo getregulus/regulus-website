@@ -33,7 +33,7 @@ const ApiDocs = () => {
             <h2 className="text-gray-800 text-xl sm:text-2xl font-medium mb-6">
               Understanding Your API Key
             </h2>
-            <p className="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
+            <p className="text-gray-700 text-base mb-6 leading-relaxed">
               To interact with the Regulus API, you need a unique API key, which
               authorizes your requests and links them to your account. Keep this
               key secure, as it grants access to your account's resources. Note
@@ -79,7 +79,7 @@ const ApiDocs = () => {
               </div>
             </div>
 
-            <p className="text-gray-700 text-base sm:text-lg mb-6 leading-relaxed">
+            <p className="text-gray-700 text-base mb-6 leading-relaxed">
               Use your API key in the{" "}
               <code className="bg-gray-100 px-1 rounded">Authorization</code>{" "}
               header of your requests:

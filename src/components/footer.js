@@ -62,13 +62,28 @@ const Footer = () => (
             <h3 className="text-gray-800 font-bold mb-3">Legal</h3>
             <ul className="space-y-2 text-gray-600 text-sm flex-1">
               <li>
-                <a href="#privacy" className="hover:text-gray-800">
+                <Link to="/privacy-policy" className="hover:text-gray-800">
                   Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link to="/terms-of-use" className="hover:text-gray-800">
+                  Terms of Use
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="flex flex-col">
+            <h3 className="text-gray-800 font-bold mb-3">Social</h3>
+            <ul className="space-y-2 text-gray-600 text-sm flex-1">
+              <li>
+                <a href="https://www.linkedin.com/showcase/getregulus" target="_blank" className="hover:text-gray-800">
+                  Linkedin
                 </a>
               </li>
               <li>
-                <a href="#terms" className="hover:text-gray-800">
-                  Terms of Use
+                <a href="#" className="hover:text-gray-800">
+                  Discord
                 </a>
               </li>
             </ul>
