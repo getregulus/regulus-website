@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Home -->
+    <url>
+        <loc>https://getregulus.co/</loc>
+        <lastmod>2025-02-13</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- API Docs -->
+    <url>
+        <loc>https://getregulus.co/docs/api-docs/</loc>
+        <lastmod>2025-02-13</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://getregulus.co/docs/api-docs/alerts-api</loc>
+    </url>
+    <url>
+        <loc>https://getregulus.co/docs/api-docs/audit-api</loc>
+    </url>
+    <url>
+        <loc>https://getregulus.co/docs/api-docs/auth-api</loc>
+    </url>
+    <url>
+        <loc>https://getregulus.co/docs/api-docs/organizations-api</loc>
+    </url>
+    <url>
+        <loc>https://getregulus.co/docs/api-docs/rules-api</loc>
+    </url>
+    <url>
+        <loc>https://getregulus.co/docs/api-docs/transactions-api</loc>
+    </url>
+    <url>
+        <loc>https://getregulus.co/docs/api-docs/watchlist-api</loc>
+    </url>
+
+    <!-- Getting Started -->
+    <url>
+        <loc>https://getregulus.co/docs/getting-started/</loc>
+    </url>
+    <url>
+        <loc>https://getregulus.co/docs/getting-started/organizations</loc>
+    </url>
+    <url>
+        <loc>https://getregulus.co/docs/getting-started/workflow-builder</loc>
+    </url>
+
+    <!-- Self-Hosted -->
+    <url>
+        <loc>https://getregulus.co/docs/self-hosted/</loc>
+    </url>
+    <url>
+        <loc>https://getregulus.co/docs/self-hosted/installation</loc>
+    </url>
+    <url>
+        <loc>https://getregulus.co/docs/self-hosted/troubleshooting</loc>
+    </url>
+    <url>
+        <loc>https://getregulus.co/docs/self-hosted/upgrading-to-self-hosted-enterprise</loc>
+    </url>
+
+    <!-- Transaction Monitoring -->
+    <url>
+        <loc>https://getregulus.co/docs/transaction-monitoring/</loc>
+    </url>
+    <url>
+        <loc>https://getregulus.co/docs/transaction-monitoring/audit-logs</loc>
+    </url>
+    <url>
+        <loc>https://getregulus.co/docs/transaction-monitoring/customizable-alerts</loc>
+    </url>
+    <url>
+        <loc>https://getregulus.co/docs/transaction-monitoring/feeding-transactions</loc>
+    </url>
+    <url>
+        <loc>https://getregulus.co/docs/transaction-monitoring/rule-builder</loc>
+    </url>
+    <url>
+        <loc>https://getregulus.co/docs/transaction-monitoring/watchlists</loc>
+    </url>
+
+    <!-- Other Pages -->
+    <url>
+        <loc>https://getregulus.co/integrations</loc>
+    </url>
+    <url>
+        <loc>https://getregulus.co/pricing</loc>
+    </url>
+    <url>
+        <loc>https://getregulus.co/privacy-policy</loc>
+    </url>
+    <url>
+        <loc>https://getregulus.co/soon</loc>
+    </url>
+    <url>
+        <loc>https://getregulus.co/terms-of-use</loc>
+    </url>
+
+</urlset>
