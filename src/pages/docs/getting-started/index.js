@@ -71,7 +71,7 @@ const GettingStarted = () => {
               <li>
                 <strong>Create an Account:</strong> Sign up on the
                 <a
-                  href="https://app.getregulus.co/login"
+                  href="https://web.getregulus.co/login"
                   target="_blank"
                   className="text-blue-600 hover:underline"
                 >

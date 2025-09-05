@@ -48,7 +48,7 @@ const SelfHosted = () => {
                 Hosted on Regulus servers (available at{" "}
                 <Link
                   className="text-blue-500"
-                  to="https://app.getregulus.co/login"
+                  to="https://web.getregulus.co/login"
                 >
                   here
                 </Link>

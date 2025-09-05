@@ -30,7 +30,7 @@ const Footer = () => (
             <ul className="space-y-2 text-gray-600 text-sm flex-1">
               <li>
                 <a
-                  href="https://app.getregulus.co/"
+                  href="https://web.getregulus.co/"
                   className="hover:text-gray-800"
                 >
                   Regulus Cloud
