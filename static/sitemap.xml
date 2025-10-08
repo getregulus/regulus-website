@@ -43,10 +43,7 @@
         <loc>https://getregulus.co/docs/getting-started/</loc>
     </url>
     <url>
-        <loc>https://getregulus.co/docs/getting-started/organizations</loc>
-    </url>
-    <url>
-        <loc>https://getregulus.co/docs/getting-started/workflow-builder</loc>
+        <loc>https://getregulus.co/docs/getting-started/setup-overview</loc>
     </url>
 
     <!-- Self-Hosted -->
@@ -56,31 +53,25 @@
     <url>
         <loc>https://getregulus.co/docs/self-hosted/installation</loc>
     </url>
-    <url>
-        <loc>https://getregulus.co/docs/self-hosted/troubleshooting</loc>
-    </url>
-    <url>
-        <loc>https://getregulus.co/docs/self-hosted/upgrading-to-self-hosted-enterprise</loc>
-    </url>
 
-    <!-- Transaction Monitoring -->
+    <!-- Core Features -->
     <url>
-        <loc>https://getregulus.co/docs/transaction-monitoring/</loc>
+        <loc>https://getregulus.co/docs/core-features/</loc>
     </url>
     <url>
-        <loc>https://getregulus.co/docs/transaction-monitoring/audit-logs</loc>
+        <loc>https://getregulus.co/docs/core-features/audit-logs</loc>
     </url>
     <url>
-        <loc>https://getregulus.co/docs/transaction-monitoring/customizable-alerts</loc>
+        <loc>https://getregulus.co/docs/core-features/customizable-alerts</loc>
     </url>
     <url>
-        <loc>https://getregulus.co/docs/transaction-monitoring/feeding-transactions</loc>
+        <loc>https://getregulus.co/docs/core-features/transaction-monitoring</loc>
     </url>
     <url>
-        <loc>https://getregulus.co/docs/transaction-monitoring/rule-builder</loc>
+        <loc>https://getregulus.co/docs/core-features/rule-engine</loc>
     </url>
     <url>
-        <loc>https://getregulus.co/docs/transaction-monitoring/watchlists</loc>
+        <loc>https://getregulus.co/docs/core-features/watchlists</loc>
     </url>
 
     <!-- Other Pages -->

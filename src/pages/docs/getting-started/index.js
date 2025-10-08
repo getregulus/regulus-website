@@ -85,8 +85,19 @@ const GettingStarted = () => {
                 intuitive Regulus dashboard.
               </li>
               <li>
-                <strong>Set Up Monitoring:</strong> Define monitoring rules
-                tailored to your operational needs.
+                <strong>Set Up Monitoring:</strong>
+                {" "}
+                Get your API key from your organization, implement the
+                <a
+                  href="
+https://www.npmjs.com/package/regulus-sdk"
+                  target="_blank"
+                  className="text-blue-600 hover:underline ml-1"
+                >
+                  Regulus SDK
+                </a>{" "}
+                into your codebase, and define monitoring rules tailored to your
+                operational needs.
               </li>
               <li>
                 <strong>Invite Team Members:</strong> Enable collaboration by
@@ -100,19 +111,6 @@ const GettingStarted = () => {
               </li>
             </ol>
           </div>
-          <div className="p-4 bg-blue-50 border-l-4 border-blue-500 text-blue-700 rounded my-6">
-              <strong>Note:</strong> For troubleshooting, visit the
-              <a
-                href="https://docs.getregulus.co/troubleshooting"
-                className="text-blue-600 hover:underline ml-1 underline"
-                target="/docs/self-hosted/troubleshooting/"
-                rel="noopener noreferrer"
-              >
-                troubleshooting guide
-              </a>
-              .
-            </div>
-          
         </section>
       </main>
     </DocLayout>

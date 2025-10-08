@@ -4,28 +4,28 @@ import Seo from "@components/seo"
 
 const breadcrumbPath = [
   { label: "Docs", href: "/docs" },
-  { label: "Getting Started", href: "/docs/gettting-started" },
-  { label: "No-Code Workflow Builder" },
+  { label: "Core Features", href: "/docs/core-features" },
+  { label: "Transaction Monitoring" },
 ]
 
-const WorkflowBuilder = () => {
+const TransactionMonitoring = () => {
   return (
     <DocLayout breadcrumbPath={breadcrumbPath}>
       <Seo
-        title="Getting Started with No-Code Workflow Builder"
-        description="Explore the No-Code Workflow Builder feature in Regulus. Learn how to visualize blockchain monitoring workflows and map key services for better insights."
+        title="Transaction Monitoring"
+        description="Learn how to feed transactions into Regulus for monitoring. Integrate blockchain data sources to track and analyze transactions in real-time."
         keywords={[
-          "No-Code Workflow Builder",
-          "Blockchain Monitoring Map",
-          "Visualize Workflows",
-          "Regulus No-Code Workflow Builder",
+          "Feeding Transactions",
+          "Blockchain Transactions",
+          "Transaction Integration",
+          "Real-Time Monitoring",
           "Regulus Documentation",
-          "Blockchain Insights",
+          "Blockchain Monitoring",
         ]}
       >
         <meta
           property="og:url"
-          content="https://getregulus.co/docs/getting-started/service-map"
+          content="https://getregulus.co/docs/transaction-monitoring/feeding-transactions"
         />
       </Seo>
 
@@ -43,4 +43,4 @@ const WorkflowBuilder = () => {
   )
 }
 
-export default WorkflowBuilder
+export default TransactionMonitoring

@@ -4,28 +4,28 @@ import Seo from "@components/seo"
 
 const breadcrumbPath = [
   { label: "Docs", href: "/docs" },
-  { label: "Self Hosted", href: "/docs/self-hosted" },
-  { label: "Upgrading to Self-Hosted Enterprise" },
+  { label: "Core Features", href: "/docs/core-features" },
+  { label: "Audit Logs" },
 ]
 
-const Upgrading = () => {
+const AuditLogs = () => {
   return (
     <DocLayout breadcrumbPath={breadcrumbPath}>
       <Seo
-        title="Upgrading to Self-Hosted Enterprise"
-        description="Learn how to upgrade from the basic self-hosted version of Regulus to the enterprise version. Unlock advanced features and enhanced scalability."
+        title="Audit Logs"
+        description="Explore Audit Logs in Regulus. Learn how to track, review, and analyze blockchain transaction activities with detailed audit trails."
         keywords={[
-          "Upgrading to Self-Hosted Enterprise",
-          "Regulus Enterprise",
-          "Self-Hosted Upgrade",
-          "Blockchain Monitoring Enterprise",
-          "Advanced Blockchain Monitoring",
+          "Audit Logs",
+          "Blockchain Audit",
+          "Transaction Logs",
+          "Blockchain Monitoring",
           "Regulus Documentation",
+          "Detailed Audit Trails",
         ]}
       >
         <meta
           property="og:url"
-          content="https://getregulus.co/docs/self-hosted/upgrading-to-self-hosted-enterprise"
+          content="https://getregulus.co/docs/transaction-monitoring/audit-logs"
         />
       </Seo>
 
@@ -43,4 +43,4 @@ const Upgrading = () => {
   )
 }
 
-export default Upgrading
+export default AuditLogs

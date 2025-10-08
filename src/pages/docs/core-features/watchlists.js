@@ -4,28 +4,28 @@ import Seo from "@components/seo"
 
 const breadcrumbPath = [
   { label: "Docs", href: "/docs" },
-  { label: "Getting Started", href: "/docs/gettting-started" },
-  { label: "Organizations" },
+  { label: "Core Features", href: "/docs/core-features" },
+  { label: "Watchlists" },
 ]
 
-const Organizations = () => {
+const Watchlists = () => {
   return (
     <DocLayout breadcrumbPath={breadcrumbPath}>
       <Seo
-        title="Getting Started with Organizations"
-        description="Learn how to manage organizations in Regulus. Discover how to create, configure, and assign roles for effective blockchain monitoring workflows."
+        title="Watchlists"
+        description="Learn about Watchlists in Regulus. Discover how to create, manage, and monitor blockchain addresses and transactions using Watchlists."
         keywords={[
-          "Getting Started",
-          "Organizations in Regulus",
-          "Organization Management",
-          "Blockchain Monitoring Roles",
+          "Watchlists",
+          "Blockchain Watchlists",
+          "Transaction Monitoring",
+          "Address Monitoring",
           "Regulus Documentation",
-          "Organization Configuration",
+          "Blockchain Monitoring Features",
         ]}
       >
         <meta
           property="og:url"
-          content="https://getregulus.co/docs/getting-started/organizations"
+          content="https://getregulus.co/docs/transaction-monitoring/watchlists"
         />
       </Seo>
 
@@ -43,4 +43,4 @@ const Organizations = () => {
   )
 }
 
-export default Organizations
+export default Watchlists

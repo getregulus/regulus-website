@@ -245,6 +245,7 @@ const Navbar = () => {
                       Docs
                     </Link>
                   </li>
+                  {/* 
                   <li>
                     <Link
                       href=""
@@ -253,6 +254,7 @@ const Navbar = () => {
                       Join Discord Channel
                     </Link>
                   </li>
+                  */}
                 </ul>
               </div>
             </li>
@@ -430,11 +432,13 @@ const Navbar = () => {
                       Docs
                     </Link>
                   </li>
+                  {/* 
                   <li>
                     <a href="" className="text-indigo-500">
                       Join Discord Channel
                     </a>
                   </li>
+                  */}
                 </ul>
               )}
             </li>

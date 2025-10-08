@@ -23,8 +23,10 @@ const DocLayout = ({ children, breadcrumbPath }) => {
       label: "Getting Started",
       href: "/docs/getting-started/",
       children: [
-        { label: "Organizations", href: "/docs/getting-started/organizations" },
-        { label: "No-Code Workflow Builder", href: "/docs/getting-started/workflow-builder" },
+        {
+          label: "Setup Overview",
+          href: "/docs/getting-started/setup-overview",
+        },
       ],
     },
     {
@@ -32,38 +34,38 @@ const DocLayout = ({ children, breadcrumbPath }) => {
       href: "/docs/self-hosted",
       children: [
         { label: "Installation", href: "/docs/self-hosted/installation" },
-        {
-          label: "Upgrading to Enterprise",
-          href: "/docs/self-hosted/upgrading-to-self-hosted-enterprise",
-        },
-        { label: "Troubleshooting", href: "/docs/self-hosted/troubleshooting" },
       ],
     },
     {
-      label: "Transaction Monitoring",
-      href: "/docs/transaction-monitoring",
+      label: "Core Features",
+      href: "/docs/core-features",
       children: [
         {
-          label: "Feeding Transactions",
-          href: "/docs/transaction-monitoring/feeding-transactions",
+          label: "Transaction Monitoring",
+          href: "/docs/core-features/transaction-monitoring",
         },
         {
-          label: "Rule Builder",
-          href: "/docs/transaction-monitoring/rule-builder",
+          label: "Rule Engine",
+          href: "/docs/core-features/rule-engine",
         },
         {
           label: "Customizable Alerts",
-          href: "/docs/transaction-monitoring/customizable-alerts",
+          href: "/docs/core-features/customizable-alerts",
         },
         {
           label: "Audit Logs",
-          href: "/docs/transaction-monitoring/audit-logs",
+          href: "/docs/core-features/audit-logs",
         },
         {
           label: "Watchlists",
-          href: "/docs/transaction-monitoring/watchlists",
+          href: "/docs/core-features/watchlists",
         },
       ],
+    },
+    {
+      label: "Integrations",
+      href: "/docs/integrations",
+      children: [],
     },
     {
       label: "API Documentation",

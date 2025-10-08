@@ -4,28 +4,28 @@ import Seo from "@components/seo"
 
 const breadcrumbPath = [
   { label: "Docs", href: "/docs" },
-  { label: "Self Hosted", href: "/docs/self-hosted" },
-  { label: "Troubleshooting" },
+  { label: "Core Features", href: "/docs/core-features" },
+  { label: "Customizable Alerts" },
 ]
 
-const Troubleshooting = () => {
+const CustomizableAlerts = () => {
   return (
     <DocLayout breadcrumbPath={breadcrumbPath}>
       <Seo
-        title="Self-Hosted Troubleshooting"
-        description="Find solutions to common issues with the self-hosted version of Regulus. Learn how to debug and resolve setup, deployment, and configuration problems."
+        title="Customizable Alerts"
+        description="Discover how to create and manage customizable alerts in Regulus. Stay informed about blockchain transactions with tailored alert configurations."
         keywords={[
-          "Self-Hosted Troubleshooting",
-          "Regulus Troubleshooting",
-          "Blockchain Monitoring Issues",
-          "Debugging Regulus",
-          "Regulus Deployment Problems",
+          "Customizable Alerts",
+          "Blockchain Alerts",
+          "Transaction Alerts",
+          "Alert Management",
           "Regulus Documentation",
+          "Blockchain Monitoring",
         ]}
       >
         <meta
           property="og:url"
-          content="https://getregulus.co/docs/self-hosted/troubleshooting"
+          content="https://getregulus.co/docs/transaction-monitoring/customizable-alerts"
         />
       </Seo>
 
@@ -43,4 +43,4 @@ const Troubleshooting = () => {
   )
 }
 
-export default Troubleshooting
+export default CustomizableAlerts

@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "regulus-website",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "The AI Watchdog for Web3 Transactions",
+  "version": "0.1.1",
+  "author": "Regulus Ltd.",
   "dependencies": {
     "gatsby": "^5.14.0",
     "gatsby-plugin-alias-imports": "^1.0.5",

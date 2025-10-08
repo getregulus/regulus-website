@@ -81,11 +81,6 @@ const Footer = () => (
                   Linkedin
                 </a>
               </li>
-              <li>
-                <a href="#" className="hover:text-gray-800">
-                  Discord
-                </a>
-              </li>
             </ul>
           </div>
         </div>

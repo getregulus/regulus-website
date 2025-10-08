@@ -4,27 +4,29 @@ import Seo from "@components/seo"
 
 const breadcrumbPath = [
   { label: "Docs", href: "/docs" },
-  { label: "Transaction Monitoring" },
+  { label: "Integrations" },
 ]
 
-const TransactionMonitoring = () => {
+const Integrations = () => {
   return (
     <DocLayout breadcrumbPath={breadcrumbPath}>
       <Seo
-        title="Transaction Monitoring"
-        description="Discover how Regulus helps you monitor blockchain transactions in real-time. Learn about alerts, audit logs, and advanced monitoring features."
+        title="Integrations | Regulus Documentation"
+        description="Discover how to connect Regulus with your blockchain tools and monitoring systems. Learn integration setup, configuration, and automation workflows to enhance transaction visibility."
         keywords={[
-          "Transaction Monitoring",
+          "Regulus Integrations",
           "Blockchain Monitoring",
-          "Real-Time Monitoring",
+          "Transaction Alerts",
+          "Web3 Integrations",
           "Audit Logs",
-          "Custom Alerts",
+          "Blockchain Security",
+          "Automation Setup",
           "Regulus Documentation",
         ]}
       >
         <meta
           property="og:url"
-          content="https://getregulus.co/docs/transaction-monitoring"
+          content="https://getregulus.co/docs/integrations"
         />
       </Seo>
 
@@ -42,4 +44,4 @@ const TransactionMonitoring = () => {
   )
 }
 
-export default TransactionMonitoring
+export default Integrations
