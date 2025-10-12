@@ -4,28 +4,29 @@ import Seo from "@components/seo"
 
 const breadcrumbPath = [
   { label: "Docs", href: "/docs" },
-  { label: "Core Features", href: "/docs/core-features" },
-  { label: "Customizable Alerts" },
+  { label: "Intelligence Agents" },
 ]
 
-const CustomizableAlerts = () => {
+const IntelligenceAgents = () => {
   return (
     <DocLayout breadcrumbPath={breadcrumbPath}>
       <Seo
-        title="Customizable Alerts"
-        description="Discover how to create and manage customizable alerts in Regulus. Stay informed about blockchain transactions with tailored alert configurations."
+        title="Intelligence Agents | Regulus Documentation"
+        description="Explore Regulus Intelligence Agents — SDK-powered modules for watchlists, pattern recognition, risk scoring, and cross-chain & temporal reasoning. Enhance monitoring with advanced analytics and automation."
         keywords={[
-          "Customizable Alerts",
-          "Blockchain Alerts",
-          "Transaction Alerts",
-          "Alert Management",
+          "Regulus Intelligence Agents",
+          "Blockchain Analytics",
+          "Risk Scoring",
+          "Pattern Recognition",
+          "Cross-Chain Monitoring",
+          "Temporal Reasoning",
+          "SDK",
           "Regulus Documentation",
-          "Blockchain Monitoring",
         ]}
       >
         <meta
           property="og:url"
-          content="https://getregulus.co/docs/transaction-monitoring/customizable-alerts"
+          content="https://getregulus.co/docs/sdk/intelligence-agents"
         />
       </Seo>
 
@@ -43,4 +44,4 @@ const CustomizableAlerts = () => {
   )
 }
 
-export default CustomizableAlerts
+export default IntelligenceAgents

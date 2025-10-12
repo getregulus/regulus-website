@@ -70,11 +70,11 @@
     <url>
         <loc>https://getregulus.co/docs/core-features/rule-engine</loc>
     </url>
-    <url>
-        <loc>https://getregulus.co/docs/core-features/watchlists</loc>
-    </url>
 
     <!-- Other Pages -->
+    <url>
+        <loc>https://getregulus.co/intelligence-agents</loc>
+    </url>
     <url>
         <loc>https://getregulus.co/integrations</loc>
     </url>

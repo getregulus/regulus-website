@@ -19,7 +19,7 @@ const Footer = () => (
             />
           </Link>
           <p className="text-gray-700 mt-2 text-sm max-w-xs">
-            Suspicious Activity Monitoring in Web3.
+            The AI Watchdog for Web3 Transactions.
           </p>
         </div>
 

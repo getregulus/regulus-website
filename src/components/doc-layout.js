@@ -49,18 +49,19 @@ const DocLayout = ({ children, breadcrumbPath }) => {
           href: "/docs/core-features/rule-engine",
         },
         {
-          label: "Customizable Alerts",
-          href: "/docs/core-features/customizable-alerts",
+          label: "Flag Alerts",
+          href: "/docs/core-features/flag-alerts",
         },
         {
           label: "Audit Logs",
           href: "/docs/core-features/audit-logs",
         },
-        {
-          label: "Watchlists",
-          href: "/docs/core-features/watchlists",
-        },
       ],
+    },
+    {
+      label: "Intelligence Agents",
+      href: "/docs/intelligence-agents",
+      children: [],
     },
     {
       label: "Integrations",

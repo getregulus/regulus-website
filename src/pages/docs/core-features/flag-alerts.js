@@ -5,27 +5,27 @@ import Seo from "@components/seo"
 const breadcrumbPath = [
   { label: "Docs", href: "/docs" },
   { label: "Core Features", href: "/docs/core-features" },
-  { label: "Watchlists" },
+  { label: "Flag Alerts" },
 ]
 
-const Watchlists = () => {
+const FlagAlerts = () => {
   return (
     <DocLayout breadcrumbPath={breadcrumbPath}>
       <Seo
-        title="Watchlists"
-        description="Learn about Watchlists in Regulus. Discover how to create, manage, and monitor blockchain addresses and transactions using Watchlists."
+        title="Flag Alerts"
+        description="Discover how to create and manage flag alerts in Regulus. Stay informed about blockchain transactions with tailored alert configurations."
         keywords={[
-          "Watchlists",
-          "Blockchain Watchlists",
-          "Transaction Monitoring",
-          "Address Monitoring",
+          "Flag Alerts",
+          "Blockchain Alerts",
+          "Transaction Alerts",
+          "Alert Management",
           "Regulus Documentation",
-          "Blockchain Monitoring Features",
+          "Blockchain Monitoring",
         ]}
       >
         <meta
           property="og:url"
-          content="https://getregulus.co/docs/transaction-monitoring/watchlists"
+          content="https://getregulus.co/docs/transaction-monitoring/customizable-alerts"
         />
       </Seo>
 
@@ -43,4 +43,4 @@ const Watchlists = () => {
   )
 }
 
-export default Watchlists
+export default FlagAlerts

@@ -168,7 +168,7 @@ const Navbar = () => {
                       href="#feature2"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
-                      Customizable Alerts
+                      Flag Alerts
                       <p className="text-gray-600 text-xs max-w-sm">
                         Receive instant notifications via Slack, Email, or
                         Webhook whenever suspicious activities are detected.
@@ -372,7 +372,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <Link to="#feature2" className="block text-gray-700">
-                      Customizable Alerts
+                      Flag Alerts
                       <p className="text-gray-600 text-xs max-w-sm">
                         Receive instant notifications via Slack, Email, or
                         Webhook whenever suspicious activities are detected.
