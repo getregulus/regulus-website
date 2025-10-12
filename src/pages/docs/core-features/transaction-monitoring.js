@@ -216,7 +216,7 @@ const transactionData = {
             </h2>
             <ul className="list-disc pl-6 mb-6 leading-relaxed">
               <li>
-                If you receive a <code>409</code>, confirm the
+                If you receive a <code>409</code>, confirm the {" "}
                 <code>transaction_id</code> isn't duplicated — transaction IDs
                 must be unique per organization.
               </li>

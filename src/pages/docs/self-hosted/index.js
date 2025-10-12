@@ -59,12 +59,13 @@ const SelfHosted = () => {
                   Self-Hosted:
                 </span>{" "}
                 Hosted on your infrastructure (installation at{" "}
-                <Link
+                <a
                   className="text-blue-500"
-                  to="https://github.com/getregulus"
+                  href="https://github.com/getregulus"
+                  target="_blank"
                 >
                   here
-                </Link>
+                </a>
                 )
               </li>
             </ul>
@@ -148,7 +149,7 @@ const SelfHosted = () => {
               For a detailed comparison between the editions, refer to our{" "}
               <Link
                 to="https://getregulus.co/pricing/"
-                className="text-blue-600 underline"
+                className="text-blue-600 hover:underline"
               >
                 Editions Comparison
               </Link>
@@ -178,7 +179,7 @@ const SelfHosted = () => {
               Ready to deploy Regulus Self-Hosted? Get started by following the{" "}
               <Link
                 to="https://getregulus.co/docs/self-hosted/installation/"
-                className="text-blue-600 underline"
+                className="text-blue-600 hover:underline"
               >
                 Installation Guide
               </Link>

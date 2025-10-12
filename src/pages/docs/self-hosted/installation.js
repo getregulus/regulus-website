@@ -120,15 +120,19 @@ const Installation = () => {
                 <code>.env</code> file in the root directory and include:
                 <pre className="bg-gray-900 text-gray-200 p-4 rounded overflow-x-auto mt-2">
                   <code>
+                    PORT=3000 <br />
+                    NODE_ENV=production (default: development) <br />
+                    API_URL=http://localhost:3000 <br />
+                    CORS_ORIGIN='' (default: no allowed origins for CORS) <br />{" "}
+                    <br />
                     DB_HOST=db <br />
                     DB_PORT=5432 <br />
                     DB_USER=ChangeMe (default: postgres) <br />
                     DB_PASS=ChangeMe (default: postgres) <br />
-                    DB_NAME=regulus <br />
-                    API_URL=http://localhost:3000 <br />
+                    DB_NAME=regulus <br /> <br />
                     JWT_SECRET=ChangeMe <br />
                     JWT_EXPIRATION=1h (default: 1h) <br />
-                    CORS_ORIGIN='' (default: no allowed origins for CORS) <br />
+                    API_KEY_SECRET=ChangeMe <br />
                   </code>
                 </pre>
               </li>

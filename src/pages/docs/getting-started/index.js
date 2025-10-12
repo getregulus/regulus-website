@@ -50,14 +50,18 @@ const GettingStarted = () => {
               Regulus, providing a streamlined and consistent installation
               experience. Follow these steps:
             </p>
-            To view a step-by-step setup, visit the{" "}
-            <Link
-              to="/docs/self-hosted/installation/"
-              className="text-blue-600 hover:underline"
-            >
-              Installation Guide
-            </Link>
-            .{/* Cloud Version Section */}
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              To view a step-by-step setup, visit the{" "}
+              <Link
+                to="/docs/self-hosted/installation/"
+                className="text-blue-600 hover:underline"
+              >
+                Installation Guide
+              </Link>
+              .
+            </p>
+
+            {/* Cloud Version Section */}
             <h2 className="text-gray-800 text-xl sm:text-2xl font-medium my-6">
               Cloud Version
             </h2>
@@ -70,14 +74,13 @@ const GettingStarted = () => {
             <ol className="list-decimal list-inside text-gray-700 space-y-4 mb-8">
               <li>
                 <strong>Create an Account:</strong> Sign up on the
-                <a
-                  href="https://web.getregulus.co/login"
-                  target="_blank"
+                <Link
+                  to="https://web.getregulus.co/login"
                   className="text-blue-600 hover:underline"
                 >
                   {" "}
                   Regulus Cloud Portal
-                </a>{" "}
+                </Link>{" "}
                 to get started.
               </li>
               <li>
@@ -85,9 +88,8 @@ const GettingStarted = () => {
                 intuitive Regulus dashboard.
               </li>
               <li>
-                <strong>Set Up Monitoring:</strong>
-                {" "}
-                Get your API key from your organization, implement the
+                <strong>Set Up Monitoring:</strong> Get your API key from your
+                organization, implement the
                 <a
                   href="
 https://www.npmjs.com/package/regulus-sdk"
