@@ -19,7 +19,7 @@ const Footer = () => (
             />
           </Link>
           <p className="text-gray-700 mt-2 text-sm max-w-xs">
-            The AI Watchdog for Web3 Transactions.
+            The AI Watchdog for Web3 Transactions
           </p>
         </div>
 
@@ -88,7 +88,7 @@ const Footer = () => (
 
       {/* Footer Bottom */}
       <div className="mt-8 text-start text-gray-500 text-xs">
-        © {new Date().getFullYear()} Regulus. All rights reserved.
+        © {new Date().getFullYear()} Regulus, powered by <a href="https://busker.audio/" target="_blank" referrerPolicy="no-referrer" className="text-pink-700">Busker</a> Geeks.
       </div>
     </div>
   </footer>

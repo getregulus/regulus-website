@@ -9,7 +9,7 @@ import Deployments from "@components/deployments"
 const IndexPage = () => (
   <Layout>
     <Seo
-      title="The AI Watchdog for Web3 Transactions."
+      title="The AI Watchdog for Web3 Transactions"
       description="Advanced monitoring solutions work seamlessly in the
         background, detecting and alerting suspicious activities so you can
         focus on driving innovation and growth."
