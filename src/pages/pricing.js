@@ -35,12 +35,12 @@ const plansData = {
       price: "£79/month",
       description: "Affordable cloud hosting",
       features: [
-        "Managed Hosting",
-        "Transaction Monitoring",
-        "Automatic Updates",
-        "Custom Rule Creation",
-        "Setting Up Alers & Audit Logging",
-        "RBAC",
+        "Managed Hosting & Auto-Updates",
+        "Real-Time Transaction Monitoring",
+        "Seamless Third-Party Integrations",
+        "Custom Rule Builder",
+        "Alert Setup & Audit Logs",
+        "Role-Based Access Control (RBAC)",
       ],
       button: {
         text: "Get Started",

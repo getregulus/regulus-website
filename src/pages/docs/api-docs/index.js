@@ -152,15 +152,6 @@ const ApiDocs = () => {
               </Link>{" "}
               - Access and analyze your transaction data.
             </li>
-            <li>
-              <Link
-                to="/docs/api-docs/watchlist-api/"
-                className="text-blue-600 hover:underline"
-              >
-                Watchlist API
-              </Link>{" "}
-              - Manage watchlists for monitoring specific entities.
-            </li>
           </ul>
         </section>
       </main>

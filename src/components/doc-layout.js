@@ -81,7 +81,6 @@ const DocLayout = ({ children, breadcrumbPath }) => {
         { label: "Rules API", href: "/docs/api-docs/rules-api" },
         { label: "Alerts API", href: "/docs/api-docs/alerts-api" },
         { label: "Audit API", href: "/docs/api-docs/audit-api" },
-        { label: "Watchlist API", href: "/docs/api-docs/watchlist-api" },
       ],
     },
   ]

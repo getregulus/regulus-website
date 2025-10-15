@@ -53,7 +53,7 @@ const Footer = () => (
             <ul className="space-y-2 text-gray-600 text-sm flex-1">
               <li>
                 <a href="/docs" className="hover:text-gray-800">
-                  Docs
+                  Documentation
                 </a>
               </li>
             </ul>

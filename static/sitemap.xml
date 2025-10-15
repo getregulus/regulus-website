@@ -34,10 +34,7 @@
     <url>
         <loc>https://getregulus.co/docs/api-docs/transactions-api</loc>
     </url>
-    <url>
-        <loc>https://getregulus.co/docs/api-docs/watchlist-api</loc>
-    </url>
-
+   
     <!-- Getting Started -->
     <url>
         <loc>https://getregulus.co/docs/getting-started/</loc>

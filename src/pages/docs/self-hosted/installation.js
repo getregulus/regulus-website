@@ -30,7 +30,7 @@ const Installation = () => {
       </Seo>
 
       <main className="flex-grow">
-        <section className="py-4 px-4 sm:px-6 lg:px-8">
+        <section className="py-4">
           <div className="max-w-7xl mx-auto">
             <h1 className="text-gray-800 text-2xl sm:text-3xl font-medium mb-6">
               Self-Hosted Installation Guide

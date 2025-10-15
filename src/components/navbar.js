@@ -119,92 +119,6 @@ const Navbar = () => {
               </div>
             </li>
 
-            {/* Features Dropdown */}
-            <li
-              className="relative group"
-              onMouseEnter={() => handleMouseEnter("features")}
-              onMouseLeave={handleMouseLeave}
-            >
-              <button
-                className="flex items-center py-2 text-gray-700 hover:text-blue-600"
-                onClick={() => handleDropdownClick("features")}
-              >
-                Features
-                <svg
-                  className="w-4 h-4 ml-1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </button>
-              <div
-                className={`${
-                  openDropdown === "features" ? "block" : "hidden"
-                } absolute top-full left-0 bg-white border text-gray-700 rounded-md shadow-lg min-w-max z-10`}
-              >
-                <ul className="py-2">
-                  <li>
-                    <a
-                      href="#feature1"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      Real-Time Transaction Monitoring
-                      <p className="text-gray-600 text-xs max-w-sm">
-                        Effortlessly track and evaluate transactions with
-                        predefined and custom rules for unmatched security.
-                      </p>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#feature2"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      Flag Alerts
-                      <p className="text-gray-600 text-xs max-w-sm">
-                        Receive instant notifications via Slack, Email, or
-                        Webhook whenever suspicious activities are detected.
-                      </p>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#feature2"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      No-Code Workflow Builder
-                      <p className="text-gray-600 text-xs max-w-sm">
-                        Easily create, arrange, and modify workflows within the
-                        monitoring map using an intuitive, no-code
-                        interface—customize rules seamlessly without technical
-                        expertise.
-                      </p>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#feature2"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      Global Compliance Coverage
-                      <p className="text-gray-600 text-xs max-w-sm">
-                        Ensure compliance with regulatory requirements in
-                        different jurisdictions worldwide.
-                      </p>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
             {/* Learn Dropdown */}
             <li
               className="relative group"
@@ -242,7 +156,7 @@ const Navbar = () => {
                       href="/docs"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
-                      Docs
+                      Documentation
                     </Link>
                   </li>
                   {/* 
@@ -339,72 +253,6 @@ const Navbar = () => {
             <li>
               <button
                 className="flex justify-between w-full text-gray-700"
-                onClick={() => handleDropdownClick("features")}
-              >
-                Features
-                <svg
-                  className={`w-4 h-4 ml-1 transform transition-transform ${
-                    openDropdown === "features" ? "rotate-180" : ""
-                  }`}
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </button>
-              {openDropdown === "features" && (
-                <ul className="pl-4 mt-2 space-y-2">
-                  <li>
-                    <Link to="#feature1" className="block text-gray-700">
-                      Real-Time Transaction Monitoring
-                      <p className="text-gray-600 text-xs max-w-sm">
-                        Effortlessly track and evaluate transactions with
-                        predefined and custom rules for unmatched security.
-                      </p>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="#feature2" className="block text-gray-700">
-                      Flag Alerts
-                      <p className="text-gray-600 text-xs max-w-sm">
-                        Receive instant notifications via Slack, Email, or
-                        Webhook whenever suspicious activities are detected.
-                      </p>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="#feature3" className="block text-gray-700">
-                      No-Code Workflow Builder
-                      <p className="text-gray-600 text-xs max-w-sm">
-                        Easily create, arrange, and modify workflows within the
-                        monitoring map using an intuitive, no-code
-                        interface—customize rules seamlessly without technical
-                        expertise.
-                      </p>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="#feature3" className="block text-gray-700">
-                      Global Compliance Coverage
-                      <p className="text-gray-600 text-xs max-w-sm">
-                        Ensure compliance with regulatory requirements in
-                        different jurisdictions worldwide.
-                      </p>
-                    </Link>
-                  </li>
-                </ul>
-              )}
-            </li>
-            <li>
-              <button
-                className="flex justify-between w-full text-gray-700"
                 onClick={() => handleDropdownClick("learn")}
               >
                 Learn
@@ -429,7 +277,7 @@ const Navbar = () => {
                 <ul className="pl-4 mt-2 space-y-2">
                   <li>
                     <Link to="/docs" className="block text-gray-700">
-                      Docs
+                      Documentation
                     </Link>
                   </li>
                   {/* 
