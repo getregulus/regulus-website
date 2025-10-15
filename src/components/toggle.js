@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
 
 const Toggle = ({ toggleOptions, plansData, containerClassName }) => {
-  const [selectedOption, setSelectedOption] = useState(toggleOptions[0].key);
+  const [selectedOption, setSelectedOption] = useState(toggleOptions[0].key)
 
   return (
     <div className={`px-4 md:px-8 ${containerClassName || ""}`}>
       {/* Toggle Switch */}
       <div className="flex justify-center mb-8">
         <div className="relative flex items-center bg-gray-200 rounded-full w-60 h-12">
-          {toggleOptions.map((option) => (
+          {toggleOptions.map(option => (
             <button
               key={option.key}
               className={`flex-1 text-center text-sm font-semibold rounded-full h-10 mx-1 ${
@@ -46,7 +46,10 @@ const Toggle = ({ toggleOptions, plansData, containerClassName }) => {
             </div>
             <a
               href={plan.button.link}
-              className="mt-6 block text-center bg-gray-600 hover:bg-gray-700 text-white py-2 px-4 rounded-md transition"
+              className={`mt-6 block text-center ${
+                plan.button.className ||
+                "bg-gray-600 hover:bg-gray-700 text-white py-2 px-4 rounded-md transition"
+              }`}
             >
               {plan.button.text}
             </a>
@@ -54,7 +57,7 @@ const Toggle = ({ toggleOptions, plansData, containerClassName }) => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Toggle;
+export default Toggle

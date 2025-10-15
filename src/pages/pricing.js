@@ -19,7 +19,7 @@ const plansData = {
       features: [
         "Transaction Monitoring",
         "Custom Rule Creation",
-        "Setting Up Alers & Audit Logging",
+        "Setting Up Alerts & Audit Logging",
         "RBAC",
         "Discord Community Support",
       ],
@@ -31,14 +31,13 @@ const plansData = {
   ],
   cloud: [
     {
-      title: "Basic Cloud Plan",
-      price: "$99/month",
+      title: "Startup Plan",
+      price: "£79/month",
       description: "Affordable cloud hosting",
       features: [
         "Managed Hosting",
-        "Automatic Updates",
-        "24/7 Cloud Support",
         "Transaction Monitoring",
+        "Automatic Updates",
         "Custom Rule Creation",
         "Setting Up Alers & Audit Logging",
         "RBAC",
@@ -46,23 +45,26 @@ const plansData = {
       button: {
         text: "Get Started",
         link: "https://web.getregulus.co/",
+        className:
+          "bg-blue-400 shadow-lg hover:bg-blue-500 transition duration-300 text-white py-2 px-4 rounded-md",
       },
     },
     {
       title: "Enterprise Plan",
-      price: "$199/month",
+      price: "",
       description: "For businesses with larger needs",
       features: [
         "All Features From Basic Plan",
         "Custom Integrations",
+        "Cross-Chain & Temporal Reasoning",
+        "Risk Scoring Engine",
         "Single-Sign On (SSO)",
         "Watchlist Matching",
-        "24/7 Support",
-        "Enterprise Support",
+        "24/7 Enterprise Support",
       ],
       button: {
         text: "Request a Trial",
-        link: "https://web.getregulus.co/",
+        link: "https://www.linkedin.com/company/get-regulus/",
       },
     },
   ],
@@ -88,6 +90,13 @@ const PricingPage = () => (
         plansData={plansData}
         containerClassName="mb-10"
       />
+
+      <div className="text-center font-bold text-lg -mt-4 pb-10">
+        <h2 className="text-gray-700">
+          Start your <span className="font-bold">7-day free trial</span> — no
+          commitment, cancel anytime.
+        </h2>
+      </div>
     </main>
   </Layout>
 )
