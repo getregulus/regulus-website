@@ -159,6 +159,14 @@ const Navbar = () => {
                       Documentation
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      to="/blog"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Blog
+                    </Link>
+                  </li>
                   {/* 
                   <li>
                     <Link
@@ -278,6 +286,11 @@ const Navbar = () => {
                   <li>
                     <Link to="/docs" className="block text-gray-700">
                       Documentation
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/blog" className="block text-gray-700">
+                      Blog
                     </Link>
                   </li>
                   {/* 

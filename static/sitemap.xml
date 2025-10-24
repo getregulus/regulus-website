@@ -88,4 +88,30 @@
         <loc>https://getregulus.co/terms-of-use</loc>
     </url>
 
+    <!-- Blog -->
+    <url>
+        <loc>https://getregulus.co/blog</loc>
+        <lastmod>2025-10-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://getregulus.co/blog/how-defi-startups-can-automate-aml-compliance-with-ai</loc>
+        <lastmod>2025-10-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://getregulus.co/blog/the-role-of-blockchain-analytics-in-enhancing-kyc-for-web3-projects</loc>
+        <lastmod>2025-10-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://getregulus.co/blog/navigating-regulatory-challenges-for-new-decentralized-finance-protocols</loc>
+        <lastmod>2025-10-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
 </urlset>

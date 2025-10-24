@@ -56,6 +56,11 @@ const Footer = () => (
                   Documentation
                 </a>
               </li>
+              <li>
+                <Link to="/blog" className="hover:text-gray-800">
+                  Blog
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="flex flex-col">
