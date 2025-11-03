@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import { trackEvent } from "@utils/trackEvent"
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -184,20 +185,17 @@ const Navbar = () => {
             <li>
               <Link
                 to="/pricing"
-                onClick={() => {
-                  if (typeof window !== "undefined" && window.dataLayer) {
-                    window.dataLayer.push({
-                      event: "button_click",
-                      category: "Navbar",
-                      action: "Click Pricing",
-                      label: "Navbar Pricing Link",
-                    })
-                  }
-                }}
+                onClick={() =>
+                  trackEvent({
+                    event: "button_click",
+                    category: "Navbar",
+                    action: "Click Pricing",
+                    label: "Navbar Pricing Link",
+                  })
+                }
+                className="block py-2 text-gray-700 hover:text-blue-600"
               >
-                <a className="block py-2 text-gray-700 hover:text-blue-600">
-                  Pricing
-                </a>
+                Pricing
               </Link>
             </li>
           </ul>
@@ -208,23 +206,28 @@ const Navbar = () => {
           <Link
             to="https://web.getregulus.co/login"
             className="border border-gray-300 px-4 py-2 rounded-md hover:bg-gray-100 text-center text-gray-700"
+            onClick={() =>
+              trackEvent({
+                event: "button_click",
+                category: "Navbar",
+                action: "Click Sign In",
+                label: "Navbar Sign In Button",
+              })
+            }
           >
             Sign In
           </Link>
           <Link
             to="https://web.getregulus.co/register"
             className="bg-blue-400 text-white px-4 py-2 rounded-md shadow hover:bg-blue-500"
-            onClick={e => {
-              if (typeof window !== "undefined") {
-                window.dataLayer = window.dataLayer || []
-                window.dataLayer.push({
-                  event: "button_click",
-                  category: "Navbar",
-                  action: "Click Get Started",
-                  label: "Navbar CTA",
-                })
-              }
-            }}
+            onClick={() =>
+              trackEvent({
+                event: "button_click",
+                category: "Navbar",
+                action: "Click Get Started",
+                label: "Navbar CTA Button",
+              })
+            }
           >
             Get Started
           </Link>
