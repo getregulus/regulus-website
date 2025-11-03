@@ -202,6 +202,17 @@ const Navbar = () => {
           <Link
             to="https://web.getregulus.co/register"
             className="bg-blue-400 text-white px-4 py-2 rounded-md shadow hover:bg-blue-500"
+            onClick={e => {
+              if (typeof window !== "undefined") {
+                window.dataLayer = window.dataLayer || []
+                window.dataLayer.push({
+                  event: "button_click",
+                  category: "Navbar",
+                  action: "Click Get Started",
+                  label: "Navbar CTA",
+                })
+              }
+            }}
           >
             Get Started
           </Link>
