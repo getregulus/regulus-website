@@ -182,7 +182,19 @@ const Navbar = () => {
             </li>
 
             <li>
-              <Link to="/pricing">
+              <Link
+                to="/pricing"
+                onClick={() => {
+                  if (typeof window !== "undefined" && window.dataLayer) {
+                    window.dataLayer.push({
+                      event: "button_click",
+                      category: "Navbar",
+                      action: "Click Pricing",
+                      label: "Navbar Pricing Link",
+                    })
+                  }
+                }}
+              >
                 <a className="block py-2 text-gray-700 hover:text-blue-600">
                   Pricing
                 </a>
