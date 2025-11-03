@@ -13,6 +13,16 @@ const Hero = ({ title, subtitle }) => (
       <Link
         to="https://web.getregulus.co/register"
         className="bg-blue-400 text-white px-8 py-3 rounded-3xl shadow-lg hover:bg-blue-500 transition duration-300"
+        onClick={() => {
+          if (typeof window !== "undefined" && window.dataLayer) {
+            window.dataLayer.push({
+              event: "button_click",
+              category: "Homepage",
+              action: "Click Get Started",
+              label: "Hero CTA Button",
+            })
+          }
+        }}
       >
         Get Started
       </Link>

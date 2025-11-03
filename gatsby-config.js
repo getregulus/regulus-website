@@ -60,7 +60,6 @@ module.exports = {
         enableWebVitalsTracking: true,
       },
     },
-
     {
       resolve: "gatsby-plugin-alias-imports",
       options: {
