@@ -1,7 +1,33 @@
 import React, { useState } from "react"
+import { trackEvent } from "@utils/trackEvent"
 
-const Toggle = ({ toggleOptions, plansData, containerClassName }) => {
+const Toggle = ({
+  toggleOptions,
+  plansData,
+  containerClassName,
+  trackingCategory,
+}) => {
   const [selectedOption, setSelectedOption] = useState(toggleOptions[0].key)
+
+  const handleToggleClick = option => {
+    setSelectedOption(option.key)
+
+    trackEvent({
+      event: "toggle_select",
+      category: trackingCategory || "Toggle",
+      action: "Switch Option",
+      label: option.key,
+    })
+  }
+
+  const handlePlanClick = (plan, optionKey) => {
+    trackEvent({
+      event: "plan_cta_click",
+      category: trackingCategory || "Toggle",
+      action: `Click ${plan.title}`,
+      label: `${optionKey} - ${plan.title}`,
+    })
+  }
 
   return (
     <div className={`px-4 md:px-8 ${containerClassName || ""}`}>
@@ -16,7 +42,7 @@ const Toggle = ({ toggleOptions, plansData, containerClassName }) => {
                   ? "bg-white text-gray-900 shadow"
                   : "text-gray-500"
               }`}
-              onClick={() => setSelectedOption(option.key)}
+              onClick={() => handleToggleClick(option)}
             >
               {option.label}
             </button>
@@ -50,6 +76,7 @@ const Toggle = ({ toggleOptions, plansData, containerClassName }) => {
                 plan.button.className ||
                 "bg-gray-600 hover:bg-gray-700 text-white py-2 px-4 rounded-md transition"
               }`}
+              onClick={() => handlePlanClick(plan, selectedOption)}
             >
               {plan.button.text}
             </a>

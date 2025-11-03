@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
+import { trackEvent } from "@utils/trackEvent"
 
 const Footer = () => (
   <footer className="bg-white border-t border-gray-200 py-10">
@@ -8,7 +9,17 @@ const Footer = () => (
       <div className="lg:flex lg:justify-between lg:items-start">
         {/* Logo and Description */}
         <div className="mb-6 lg:mb-0 lg:w-1/3">
-          <Link to="/">
+          <Link
+            to="/"
+            onClick={() =>
+              trackEvent({
+                event: "button_click",
+                category: "Footer – Branding",
+                action: "Click Logo",
+                label: "Footer Logo Link",
+              })
+            }
+          >
             <StaticImage
               src="../images/logo.png"
               loading="eager"
@@ -25,6 +36,7 @@ const Footer = () => (
 
         {/* Navigation Links */}
         <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-6 lg:flex justify-end lg:space-x-24">
+          {/* Products */}
           <div className="flex flex-col">
             <h3 className="text-gray-800 font-bold mb-3">Products</h3>
             <ul className="space-y-2 text-gray-600 text-sm flex-1">
@@ -32,6 +44,14 @@ const Footer = () => (
                 <a
                   href="https://web.getregulus.co/"
                   className="hover:text-gray-800"
+                  onClick={() =>
+                    trackEvent({
+                      event: "button_click",
+                      category: "Footer – Products",
+                      action: "Click Regulus Cloud",
+                      label: "Footer Regulus Cloud Link",
+                    })
+                  }
                 >
                   Regulus Cloud
                 </a>
@@ -42,27 +62,61 @@ const Footer = () => (
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-gray-800"
+                  onClick={() =>
+                    trackEvent({
+                      event: "button_click",
+                      category: "Footer – Products",
+                      action: "Click Regulus Self Hosted",
+                      label: "Footer Regulus Self Hosted Link",
+                    })
+                  }
                 >
                   Regulus Self-Hosted
                 </a>
               </li>
             </ul>
           </div>
+
+          {/* Learn */}
           <div className="flex flex-col">
             <h3 className="text-gray-800 font-bold mb-3">Learn</h3>
             <ul className="space-y-2 text-gray-600 text-sm flex-1">
               <li>
-                <a href="/docs" className="hover:text-gray-800">
+                <a
+                  href="/docs"
+                  className="hover:text-gray-800"
+                  onClick={() =>
+                    trackEvent({
+                      event: "button_click",
+                      category: "Footer – Learn",
+                      action: "Click Documentation",
+                      label: "Footer Documentation Link",
+                    })
+                  }
+                >
                   Documentation
                 </a>
               </li>
               <li>
-                <Link to="/blog" className="hover:text-gray-800">
+                <Link
+                  to="/blog"
+                  className="hover:text-gray-800"
+                  onClick={() =>
+                    trackEvent({
+                      event: "button_click",
+                      category: "Footer – Learn",
+                      action: "Click Blog",
+                      label: "Footer Blog Link",
+                    })
+                  }
+                >
                   Blog
                 </Link>
               </li>
             </ul>
           </div>
+
+          {/* Legal */}
           <div className="flex flex-col">
             <h3 className="text-gray-800 font-bold mb-3">Legal</h3>
             <ul className="space-y-2 text-gray-600 text-sm flex-1">
@@ -78,11 +132,25 @@ const Footer = () => (
               </li>
             </ul>
           </div>
+
+          {/* Social */}
           <div className="flex flex-col">
             <h3 className="text-gray-800 font-bold mb-3">Social</h3>
             <ul className="space-y-2 text-gray-600 text-sm flex-1">
               <li>
-                <a href="https://www.linkedin.com/company/get-regulus/" target="_blank" className="hover:text-gray-800">
+                <a
+                  href="https://www.linkedin.com/company/get-regulus/"
+                  target="_blank"
+                  className="hover:text-gray-800"
+                  onClick={() =>
+                    trackEvent({
+                      event: "button_click",
+                      category: "Footer – Social",
+                      action: "Click Linkedin",
+                      label: "Footer Linkedin Link",
+                    })
+                  }
+                >
                   Linkedin
                 </a>
               </li>
@@ -93,7 +161,24 @@ const Footer = () => (
 
       {/* Footer Bottom */}
       <div className="mt-8 text-start text-gray-500 text-xs">
-        © {new Date().getFullYear()} Regulus, powered by <a href="https://busker.audio/" target="_blank" referrerPolicy="no-referrer" className="text-pink-700">Busker</a> Geeks.
+        © {new Date().getFullYear()} Regulus, powered by{" "}
+        <a
+          href="https://busker.audio/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-pink-700"
+          onClick={() =>
+            trackEvent({
+              event: "button_click",
+              category: "Footer – Attribution",
+              action: "Click Busker",
+              label: "Footer Busker Link",
+            })
+          }
+        >
+          Busker
+        </a>{" "}
+        Geeks.
       </div>
     </div>
   </footer>

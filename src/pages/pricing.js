@@ -89,6 +89,7 @@ const PricingPage = () => (
         toggleOptions={toggleOptions}
         plansData={plansData}
         containerClassName="mb-10"
+        trackingCategory="Pricing Page"
       />
 
       <div className="text-center font-bold text-lg -mt-4 pb-10">

@@ -28,7 +28,17 @@ const Navbar = () => {
       <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
         {/* Logo */}
         <div className="flex-shrink-0">
-          <Link to="/">
+          <Link
+            to="/"
+            onClick={() =>
+              trackEvent({
+                event: "link_click",
+                category: "Navbar - Logo",
+                action: "Click Logo",
+                label: "Navbar Logo",
+              })
+            }
+          >
             <StaticImage
               src="../images/logo.png"
               loading="eager"
@@ -43,7 +53,15 @@ const Navbar = () => {
         {/* Hamburger button for mobile */}
         <button
           className="md:hidden p-2 rounded-md text-gray-500 hover:bg-gray-100"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          onClick={() => {
+            trackEvent({
+              event: "button_click",
+              category: "Navbar - Mobile Menu",
+              action: "Toggle Mobile Menu",
+              label: isMenuOpen ? "Close Menu" : "Open Menu",
+            })
+            setIsMenuOpen(!isMenuOpen)
+          }}
         >
           <span className="sr-only">Open main menu</span>
           <svg
@@ -100,8 +118,15 @@ const Navbar = () => {
                   <li>
                     <a
                       href="https://web.getregulus.co/"
-                      target="_blank"
                       className="block px-4 py-2 hover:bg-gray-100"
+                      onClick={() =>
+                        trackEvent({
+                          event: "link_click",
+                          category: "Navbar - Products Dropdown",
+                          action: "Click Regulus Cloud",
+                          label: "Navbar Products → Regulus Cloud",
+                        })
+                      }
                     >
                       Regulus Cloud
                     </a>
@@ -112,6 +137,14 @@ const Navbar = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block px-4 py-2 hover:bg-gray-100"
+                      onClick={() =>
+                        trackEvent({
+                          event: "link_click",
+                          category: "Navbar - Products Dropdown",
+                          action: "Click Self Hosted",
+                          label: "Navbar Products → Self Hosted",
+                        })
+                      }
                     >
                       Regulus Self Hosted Community Edition
                     </a>
@@ -154,8 +187,16 @@ const Navbar = () => {
                 <ul className="py-2">
                   <li>
                     <Link
-                      href="/docs"
+                      to="/docs"
                       className="block px-4 py-2 hover:bg-gray-100"
+                      onClick={() =>
+                        trackEvent({
+                          event: "link_click",
+                          category: "Navbar - Learn Dropdown",
+                          action: "Click Documentation",
+                          label: "Navbar Learn → Documentation",
+                        })
+                      }
                     >
                       Documentation
                     </Link>
@@ -164,6 +205,14 @@ const Navbar = () => {
                     <Link
                       to="/blog"
                       className="block px-4 py-2 hover:bg-gray-100"
+                      onClick={() =>
+                        trackEvent({
+                          event: "link_click",
+                          category: "Navbar - Learn Dropdown",
+                          action: "Click Blog",
+                          label: "Navbar Learn → Blog",
+                        })
+                      }
                     >
                       Blog
                     </Link>
@@ -182,13 +231,14 @@ const Navbar = () => {
               </div>
             </li>
 
+            {/* Pricing */}
             <li>
               <Link
                 to="/pricing"
                 onClick={() =>
                   trackEvent({
-                    event: "button_click",
-                    category: "Navbar",
+                    event: "link_click",
+                    category: "Navbar - Main Link",
                     action: "Click Pricing",
                     label: "Navbar Pricing Link",
                   })
@@ -201,15 +251,15 @@ const Navbar = () => {
           </ul>
         </div>
 
-        {/* Buttons */}
+        {/* Desktop Buttons */}
         <div className="hidden md:flex items-center space-x-4">
           <Link
             to="https://web.getregulus.co/login"
             className="border border-gray-300 px-4 py-2 rounded-md hover:bg-gray-100 text-center text-gray-700"
             onClick={() =>
               trackEvent({
-                event: "button_click",
-                category: "Navbar",
+                event: "link_click",
+                category: "Navbar - CTA Button",
                 action: "Click Sign In",
                 label: "Navbar Sign In Button",
               })
@@ -222,10 +272,10 @@ const Navbar = () => {
             className="bg-blue-400 text-white px-4 py-2 rounded-md shadow hover:bg-blue-500"
             onClick={() =>
               trackEvent({
-                event: "button_click",
-                category: "Navbar",
+                event: "link_click",
+                category: "Navbar - CTA Button",
                 action: "Click Get Started",
-                label: "Navbar CTA Button",
+                label: "Navbar Get Started Button",
               })
             }
           >
@@ -238,6 +288,7 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-gray-50">
           <ul className="space-y-2 p-4">
+            {/* Products */}
             <li>
               <button
                 className="flex justify-between w-full text-gray-700"
@@ -267,6 +318,14 @@ const Navbar = () => {
                     <a
                       href="https://web.getregulus.co/"
                       className="block text-gray-700"
+                      onClick={() =>
+                        trackEvent({
+                          event: "link_click",
+                          category: "Navbar - Mobile Products",
+                          action: "Click Regulus Cloud",
+                          label: "Mobile Products → Regulus Cloud",
+                        })
+                      }
                     >
                       Regulus Cloud
                     </a>
@@ -277,6 +336,14 @@ const Navbar = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block text-gray-700"
+                      onClick={() =>
+                        trackEvent({
+                          event: "link_click",
+                          category: "Navbar - Mobile Products",
+                          action: "Click Self Hosted",
+                          label: "Mobile Products → Self Hosted",
+                        })
+                      }
                     >
                       Regulus Self Hosted Community Edition
                     </a>
@@ -284,6 +351,8 @@ const Navbar = () => {
                 </ul>
               )}
             </li>
+
+            {/* Learn */}
             <li>
               <button
                 className="flex justify-between w-full text-gray-700"
@@ -310,42 +379,90 @@ const Navbar = () => {
               {openDropdown === "learn" && (
                 <ul className="pl-4 mt-2 space-y-2">
                   <li>
-                    <Link to="/docs" className="block text-gray-700">
+                    <Link
+                      to="/docs"
+                      className="block text-gray-700"
+                      onClick={() =>
+                        trackEvent({
+                          event: "link_click",
+                          category: "Navbar - Mobile Learn",
+                          action: "Click Documentation",
+                          label: "Mobile Learn → Documentation",
+                        })
+                      }
+                    >
                       Documentation
                     </Link>
                   </li>
                   <li>
-                    <Link to="/blog" className="block text-gray-700">
+                    <Link
+                      to="/blog"
+                      className="block text-gray-700"
+                      onClick={() =>
+                        trackEvent({
+                          event: "link_click",
+                          category: "Navbar - Mobile Learn",
+                          action: "Click Blog",
+                          label: "Mobile Learn → Blog",
+                        })
+                      }
+                    >
                       Blog
                     </Link>
                   </li>
-                  {/* 
-                  <li>
-                    <a href="" className="text-indigo-500">
-                      Join Discord Channel
-                    </a>
-                  </li>
-                  */}
                 </ul>
               )}
             </li>
+
+            {/* Pricing */}
             <li>
-              <Link to="/pricing">
-                <a className="block text-gray-700">Pricing</a>
+              <Link
+                to="/pricing"
+                className="block text-gray-700"
+                onClick={() =>
+                  trackEvent({
+                    event: "link_click",
+                    category: "Navbar - Mobile Main Link",
+                    action: "Click Pricing",
+                    label: "Mobile Pricing Link",
+                  })
+                }
+              >
+                Pricing
               </Link>
             </li>
+
+            {/* Sign In */}
             <li>
               <Link
                 to="https://web.getregulus.co/login"
                 className="block w-full text-center font-bold hover:text-blue-700 transition text-gray-700 border border-gray-300 px-4 py-2 rounded hover:bg-gray-100"
+                onClick={() =>
+                  trackEvent({
+                    event: "link_click",
+                    category: "Navbar - Mobile Button",
+                    action: "Click Sign In",
+                    label: "Mobile Sign In Button",
+                  })
+                }
               >
                 Sign In
               </Link>
             </li>
+
+            {/* Get Started */}
             <li className="w-full">
               <Link
                 to="https://web.getregulus.co/register"
                 className="bg-blue-400 text-white w-full py-2 rounded-md mt-2 block text-center"
+                onClick={() =>
+                  trackEvent({
+                    event: "link_click",
+                    category: "Navbar - Mobile Button",
+                    action: "Click Get Started",
+                    label: "Mobile Get Started Button",
+                  })
+                }
               >
                 Get Started
               </Link>
