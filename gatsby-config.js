@@ -52,6 +52,16 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: process.env.GATSBY_GTM_ID,
+        includeInDevelopment: false,
+        defaultDataLayer: { platform: "gatsby" },
+        enableWebVitalsTracking: true,
+      },
+    },
+
+    {
       resolve: "gatsby-plugin-alias-imports",
       options: {
         alias: {
