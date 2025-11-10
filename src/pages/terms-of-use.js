@@ -1,9 +1,14 @@
 import React from "react"
 import Layout from "@components/layout"
+import Seo from "@components/seo"
 
 const TermsOfUse = () => {
   return (
     <Layout>
+      <Seo
+        title="Terms of Use"
+        description="Regulus Terms of Use - Read our terms and conditions for using the Regulus platform and services."
+      />
       <section className="max-w-4xl mx-auto py-12 px-6">
         <h1 className="text-gray-900 text-3xl sm:text-4xl font-bold mb-6">
           Terms of Use

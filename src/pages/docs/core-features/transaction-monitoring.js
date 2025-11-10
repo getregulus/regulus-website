@@ -23,12 +23,7 @@ const TransactionMonitoring = () => {
           "Regulus Documentation",
           "Transaction API",
         ]}
-      >
-        <meta
-          property="og:url"
-          content="https://getregulus.co/docs/transaction-monitoring/feeding-transactions"
-        />
-      </Seo>
+      />
 
       <main className="flex-grow">
         <section className="py-4">

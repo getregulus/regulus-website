@@ -51,12 +51,7 @@ const OrganizationsApi = () => {
           "Regulus API Documentation",
           "Organization Management",
         ]}
-      >
-        <meta
-          property="og:url"
-          content="https://getregulus.co/docs/api-docs/organizations-api"
-        />
-      </Seo>
+      />
 
       <main className="flex-grow">
         <section className="py-4">

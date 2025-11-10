@@ -30,12 +30,7 @@ const RulesApi = () => {
           "Regulus API Documentation",
           "Rules Management",
         ]}
-      >
-        <meta
-          property="og:url"
-          content="https://getregulus.co/docs/api-docs/rules-api"
-        />
-      </Seo>
+      />
 
       <main className="flex-grow">
         <section className="py-4">

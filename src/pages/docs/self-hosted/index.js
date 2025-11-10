@@ -22,12 +22,7 @@ const SelfHosted = () => {
           "Regulus Installation",
           "Regulus Documentation",
         ]}
-      >
-        <meta
-          property="og:url"
-          content="https://getregulus.co/docs/self-hosted/"
-        />
-      </Seo>
+      />
 
       <main className="flex-grow">
         <section className="py-4">

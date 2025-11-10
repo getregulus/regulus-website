@@ -23,12 +23,7 @@ const IntelligenceAgents = () => {
           "SDK",
           "Regulus Documentation",
         ]}
-      >
-        <meta
-          property="og:url"
-          content="https://getregulus.co/docs/sdk/intelligence-agents"
-        />
-      </Seo>
+      />
 
       <main className="flex-grow">
         <section className="py-4">

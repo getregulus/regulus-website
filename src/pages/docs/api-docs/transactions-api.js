@@ -36,12 +36,7 @@ const TransactionsApi = () => {
           "Regulus API Documentation",
           "Blockchain Data Analysis",
         ]}
-      >
-        <meta
-          property="og:url"
-          content="https://getregulus.co/docs/api-docs/transactions-api"
-        />
-      </Seo>
+      />
 
       <main className="flex-grow">
         <section className="py-4">

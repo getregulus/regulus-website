@@ -19,9 +19,7 @@ const ApiDocs = () => {
           "Blockchain Monitoring API",
           "Developer Documentation",
         ]}
-      >
-        <meta property="og:url" content="https://getregulus.co/docs/api-docs" />
-      </Seo>
+      />
 
       <main className="">
         <section className="py-4">

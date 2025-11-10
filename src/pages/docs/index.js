@@ -18,7 +18,6 @@ const WhatIsRegulus = () => {
           name="keywords"
           content="Blockchain Monitoring, Web3 Transactions, Regulus Features, Audit Logging, API Authentication"
         />
-        <meta property="og:url" content="https://getregulus.co/docs" />
       </Seo>
       <main className="flex-grow">
         <section className="py-4">

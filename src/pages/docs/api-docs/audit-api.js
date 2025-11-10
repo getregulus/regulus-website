@@ -26,12 +26,7 @@ const AuditApi = () => {
           "Transaction Monitoring",
           "Regulus API Documentation",
         ]}
-      >
-        <meta
-          property="og:url"
-          content="https://getregulus.co/docs/api-docs/audit-api"
-        />
-      </Seo>
+      />
       <main className="flex-grow">
         <section className="py-4">
           <div className="max-w-7xl mx-auto">

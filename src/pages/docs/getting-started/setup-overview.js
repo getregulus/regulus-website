@@ -22,12 +22,7 @@ const SetupOverview = () => {
           "Transaction Monitoring",
           "Regulus API",
         ]}
-      >
-        <meta
-          property="og:url"
-          content="https://getregulus.co/docs/getting-started/setup-overview"
-        />
-      </Seo>
+      />
 
       <main className="flex-grow">
         <section className="py-4">

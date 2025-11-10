@@ -9,6 +9,7 @@ require("dotenv").config({
 })
 
 module.exports = {
+  trailingSlash: `never`,
   siteMetadata: {
     title: `Regulus`,
     description: `Advanced monitoring solutions work seamlessly in the

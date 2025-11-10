@@ -21,12 +21,7 @@ const RegulusStack = () => {
           "Regulus Documentation",
           "Regulus Tech Stack",
         ]}
-      >
-        <meta
-          property="og:url"
-          content="https://getregulus.co/docs/regulus-stack"
-        />
-      </Seo>
+      />
 
       <main className="flex-grow">
         <section className="py-4">

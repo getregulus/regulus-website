@@ -22,12 +22,7 @@ const FlagAlerts = () => {
           "Alert Management",
           "Regulus Documentation",
         ]}
-      >
-        <meta
-          property="og:url"
-          content="https://getregulus.co/docs/core-features/flag-alerts"
-        />
-      </Seo>
+      />
 
       <main className="flex-grow">
         <section className="py-4">

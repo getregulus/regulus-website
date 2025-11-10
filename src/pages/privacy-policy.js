@@ -1,9 +1,14 @@
 import React from "react"
 import Layout from "@components/layout"
+import Seo from "@components/seo"
 
 const PrivacyPolicy = () => {
   return (
     <Layout>
+      <Seo
+        title="Privacy Policy"
+        description="Regulus Privacy Policy - Learn how we collect, use, and safeguard your personal information. GDPR and CCPA compliant privacy practices."
+      />
       <section className="max-w-4xl mx-auto py-12 px-6">
         <h1 className="text-gray-900 text-3xl sm:text-4xl font-bold mb-6">
           Privacy Policy

@@ -21,12 +21,7 @@ const Integrations = () => {
           "Workflow Automation",
           "Regulus Documentation",
         ]}
-      >
-        <meta
-          property="og:url"
-          content="https://getregulus.co/docs/integrations"
-        />
-      </Seo>
+      />
 
       <main className="flex-grow">
         <section className="py-4">

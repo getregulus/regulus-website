@@ -23,12 +23,7 @@ const AuditLogs = () => {
           "Transaction Monitoring",
           "Regulus Documentation",
         ]}
-      >
-        <meta
-          property="og:url"
-          content="https://getregulus.co/docs/core-features/audit-logs"
-        />
-      </Seo>
+      />
 
       <main className="flex-grow">
         <section className="py-4">
