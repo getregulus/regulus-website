@@ -12,7 +12,7 @@ const BlogIndex = () => {
       excerpt:
         "Explore how DeFi is reshaping cross-border payments while global regulators push for transparency, compliance, and financial stability in digital finance.",
       slug: "/blog/the-future-of-cross-border-payments-with-defi-and-regulatory-oversight",
-      author: "Alex Moreno",
+      author: "Aylin Gorgun",
       date: "November 13, 2025",
       tags: [
         "Cross-border payments",
