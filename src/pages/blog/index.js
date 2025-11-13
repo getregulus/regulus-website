@@ -7,6 +7,23 @@ import AuthorInfo from "@components/author-info"
 const BlogIndex = () => {
   const blogPosts = [
     {
+      title:
+        "The Future of Cross-Border Payments with DeFi and Regulatory Oversight",
+      excerpt:
+        "Explore how DeFi is reshaping cross-border payments while global regulators push for transparency, compliance, and financial stability in digital finance.",
+      slug: "/blog/the-future-of-cross-border-payments-with-defi-and-regulatory-oversight",
+      author: "Alex Moreno",
+      date: "November 13, 2025",
+      tags: [
+        "Cross-border payments",
+        "DeFi",
+        "Regulations",
+        "FinTech",
+        "Global Finance",
+      ],
+      readTime: "8 min read",
+    },
+    {
       title: "How DeFi Startups Can Automate AML Compliance with AI",
       excerpt:
         "Discover how artificial intelligence is revolutionizing Anti-Money Laundering compliance for decentralized finance startups, enabling automated monitoring and real-time risk assessment.",
@@ -61,13 +78,13 @@ const BlogIndex = () => {
 
       {/* Hero Section */}
       <div className="p-6 lg:py-20">
-        <div className="max-w-4xl mx-auto text-center ">
+        <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-gray-800 text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
             Regulus Watchtower
           </h1>
           <p className="text-gray-600 text-lg sm:text-xl mb-8 leading-relaxed max-w-2xl mx-auto">
-            Insights, use cases, and compliance intelligence from the frontlines of Web3. 
-            Stay informed, stay compliant, stay ahead.
+            Insights, use cases, and compliance intelligence from the frontlines
+            of Web3. Stay informed, stay compliant, stay ahead.
           </p>
         </div>
       </div>

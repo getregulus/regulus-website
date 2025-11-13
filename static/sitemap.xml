@@ -113,5 +113,10 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-
+    <url>
+        <loc>https://getregulus.co/blog/the-future-of-cross-border-payments-with-defi-and-regulatory-oversight</loc>
+        <lastmod>2025-11-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>
