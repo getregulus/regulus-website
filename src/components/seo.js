@@ -6,7 +6,8 @@
  */
 
 import * as React from "react"
-import { useStaticQuery, graphql, useLocation } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
+import { useLocation } from "@reach/router"
 
 function Seo({ description, title, keywords = [], canonical, children }) {
   const { site } = useStaticQuery(
@@ -30,7 +31,8 @@ function Seo({ description, title, keywords = [], canonical, children }) {
   const siteUrl = site.siteMetadata?.siteUrl || "https://getregulus.co"
   
   // Generate canonical URL if not provided
-  const canonicalUrl = canonical || `${siteUrl}${location.pathname}`.replace(/\/$/, "")
+  const canonicalUrl =
+    canonical || `${siteUrl}${location?.pathname || ""}`.replace(/\/$/, "")
 
   return (
     <>
