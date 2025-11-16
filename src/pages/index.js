@@ -21,6 +21,26 @@ const IndexPage = () => (
           "Advanced monitoring solutions work seamlessly in the background, detecting and alerting suspicious activities so you can focus on driving innovation and growth."
         }
       />
+      
+      {/* Demo Video Section */}
+      <section className="pt-6 pb-10 lg:pb-16 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="w-full max-w-5xl mx-auto overflow-hidden shadow-xl">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="metadata"
+              className="w-full h-auto"
+            >
+              <source src="/videos/Regulus.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+
       <Features />
       <Deployments />
     </main>
