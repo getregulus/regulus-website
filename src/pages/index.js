@@ -23,7 +23,7 @@ const IndexPage = () => (
       />
       
       {/* Demo Video Section */}
-      <section className="pt-6 pb-10 lg:pb-16 bg-white">
+      <section className="pb-10 lg:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full max-w-5xl mx-auto overflow-hidden shadow-xl">
             <video
