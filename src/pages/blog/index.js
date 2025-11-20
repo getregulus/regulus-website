@@ -8,6 +8,17 @@ const BlogIndex = () => {
   const blogPosts = [
     {
       title:
+        "Stop Refreshing Etherscan: How to Automate Your Crypto Operations",
+      excerpt:
+        "Stop wasting hours on manual transaction checks. Learn how automated monitoring can save your Web3 team time and reduce human error.",
+      slug: "/blog/stop-refreshing-etherscan",
+      author: "Aylin Gorgun",
+      date: "November 20, 2025",
+      tags: ["Productivity", "Automation", "Operations", "Scaling", "Workflow"],
+      readTime: "8 min read",
+    },
+    {
+      title:
         "Why 'Audited' Doesn't Mean 'Safe': The Case for Real-Time Monitoring",
       excerpt:
         "Smart contract audits are just the first step. Learn why real-time transaction monitoring and circuit breakers are the missing pieces in your Web3 security stack.",
