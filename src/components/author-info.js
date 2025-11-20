@@ -20,7 +20,7 @@ const AuthorInfo = ({ name, date }) => {
       "bg-indigo-500",
       "bg-teal-500",
       "bg-orange-500",
-      "bg-cyan-500"
+      "bg-blue-600",
     ]
     const index = name.split("").reduce((acc, char) => acc + char.charCodeAt(0), 0) % colors.length
     return colors[index]

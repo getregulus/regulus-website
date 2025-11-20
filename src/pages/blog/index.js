@@ -7,6 +7,16 @@ import AuthorInfo from "@components/author-info"
 const BlogIndex = () => {
   const blogPosts = [
     {
+      title: "TIs Your Web3 Startup Ready for MiCA? A Founder's Survival Guide",
+      excerpt:
+        "MiCA regulation will shape the future of Web3 startups in the EU. This guide briefly walks founders through key MiCA requirements, compliance steps, and how to avoid pitfalls as you scale your Web3 business.",
+      slug: "/blog/regulatory-survival-guide",
+      author: "Priya Shah",
+      date: "November 20, 2025",
+      tags: ["MiCA", "Regulation", "EU", "Compliance", "Web3", "CASP"],
+      readTime: "12 min read",
+    },
+    {
       title:
         "The Future of Cross-Border Payments with DeFi and Regulatory Oversight",
       excerpt:
