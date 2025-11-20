@@ -125,4 +125,11 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+        </url>
+        <url>
+        <loc>https://getregulus.co/blog/why-audited-doesnt-mean-safe</loc>
+        <lastmod>2025-11-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>

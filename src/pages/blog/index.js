@@ -7,7 +7,18 @@ import AuthorInfo from "@components/author-info"
 const BlogIndex = () => {
   const blogPosts = [
     {
-      title: "TIs Your Web3 Startup Ready for MiCA? A Founder's Survival Guide",
+      title:
+        "Why 'Audited' Doesn't Mean 'Safe': The Case for Real-Time Monitoring",
+      excerpt:
+        "Smart contract audits are just the first step. Learn why real-time transaction monitoring and circuit breakers are the missing pieces in your Web3 security stack.",
+      slug: "/blog/why-audited-doesnt-mean-safe",
+      author: "Liam Chen",
+      date: "November 20, 2025",
+      tags: ["Security", "Audits", "Monitoring", "Blockchain", "Risk", "Hacks"],
+      readTime: "10 min read",
+    },
+    {
+      title: "Is Your Web3 Startup Ready for MiCA? A Founder's Survival Guide",
       excerpt:
         "MiCA regulation will shape the future of Web3 startups in the EU. This guide briefly walks founders through key MiCA requirements, compliance steps, and how to avoid pitfalls as you scale your Web3 business.",
       slug: "/blog/regulatory-survival-guide",
