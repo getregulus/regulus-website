@@ -137,4 +137,10 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+    <url>
+        <loc>https://getregulus.co/blog/what-vcs-look-for-in-web3-complience</loc>
+        <lastmod>2025-11-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>

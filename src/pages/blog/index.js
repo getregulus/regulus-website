@@ -7,6 +7,22 @@ import AuthorInfo from "@components/author-info"
 const BlogIndex = () => {
   const blogPosts = [
     {
+      title: "What VCs Look for in Web3 Compliance Stacks (2025 Edition)",
+      excerpt:
+        "Want to attract institutional investors? Discover why a robust compliance and monitoring stack is the new requirement for Web3 funding.",
+      slug: "/blog/what-vcs-look-for-in-web3-complience",
+      author: "Arda Gozupek",
+      date: "November 20, 2025",
+      tags: [
+        "VC",
+        "Funding",
+        "Institutional DeFi",
+        "Risk Management",
+        "Due Diligence",
+      ],
+      readTime: "9 min read",
+    },
+    {
       title:
         "Stop Refreshing Etherscan: How to Automate Your Crypto Operations",
       excerpt:
