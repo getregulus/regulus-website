@@ -117,22 +117,6 @@ const Navbar = () => {
                 <ul className="py-2">
                   <li>
                     <a
-                      href="https://web.getregulus.co/"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                      onClick={() =>
-                        trackEvent({
-                          event: "link_click",
-                          category: "Navbar - Products Dropdown",
-                          action: "Click Regulus Cloud",
-                          label: "Navbar Products → Regulus Cloud",
-                        })
-                      }
-                    >
-                      Regulus Cloud
-                    </a>
-                  </li>
-                  <li>
-                    <a
                       href="https://github.com/getregulus/"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -253,34 +237,6 @@ const Navbar = () => {
 
         {/* Desktop Buttons */}
         <div className="hidden md:flex items-center space-x-4">
-          <Link
-            to="https://web.getregulus.co/login"
-            className="border border-gray-300 px-4 py-2 rounded-md hover:bg-gray-100 text-center text-gray-700"
-            onClick={() =>
-              trackEvent({
-                event: "link_click",
-                category: "Navbar - CTA Button",
-                action: "Click Sign In",
-                label: "Navbar Sign In Button",
-              })
-            }
-          >
-            Sign In
-          </Link>
-          <Link
-            to="https://web.getregulus.co/register"
-            className="bg-blue-400 text-white px-4 py-2 rounded-md shadow hover:bg-blue-500"
-            onClick={() =>
-              trackEvent({
-                event: "link_click",
-                category: "Navbar - CTA Button",
-                action: "Click Get Started",
-                label: "Navbar Get Started Button",
-              })
-            }
-          >
-            Get Started
-          </Link>
         </div>
       </div>
 
@@ -314,22 +270,6 @@ const Navbar = () => {
               </button>
               {openDropdown === "products" && (
                 <ul className="pl-4 mt-2 space-y-2">
-                  <li>
-                    <a
-                      href="https://web.getregulus.co/"
-                      className="block text-gray-700"
-                      onClick={() =>
-                        trackEvent({
-                          event: "link_click",
-                          category: "Navbar - Mobile Products",
-                          action: "Click Regulus Cloud",
-                          label: "Mobile Products → Regulus Cloud",
-                        })
-                      }
-                    >
-                      Regulus Cloud
-                    </a>
-                  </li>
                   <li>
                     <a
                       href="https://github.com/getregulus/"
@@ -432,41 +372,6 @@ const Navbar = () => {
               </Link>
             </li>
 
-            {/* Sign In */}
-            <li>
-              <Link
-                to="https://web.getregulus.co/login"
-                className="block w-full text-center font-bold hover:text-blue-700 transition text-gray-700 border border-gray-300 px-4 py-2 rounded hover:bg-gray-100"
-                onClick={() =>
-                  trackEvent({
-                    event: "link_click",
-                    category: "Navbar - Mobile Button",
-                    action: "Click Sign In",
-                    label: "Mobile Sign In Button",
-                  })
-                }
-              >
-                Sign In
-              </Link>
-            </li>
-
-            {/* Get Started */}
-            <li className="w-full">
-              <Link
-                to="https://web.getregulus.co/register"
-                className="bg-blue-400 text-white w-full py-2 rounded-md mt-2 block text-center"
-                onClick={() =>
-                  trackEvent({
-                    event: "link_click",
-                    category: "Navbar - Mobile Button",
-                    action: "Click Get Started",
-                    label: "Mobile Get Started Button",
-                  })
-                }
-              >
-                Get Started
-              </Link>
-            </li>
           </ul>
         </div>
       )}

@@ -1,20 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import { trackEvent } from "@utils/trackEvent"
-;<Link
-  to="https://web.getregulus.co/register"
-  className="bg-blue-400 text-white px-8 py-3 rounded-3xl shadow-lg hover:bg-blue-500 transition duration-300"
-  onClick={() =>
-    trackEvent({
-      event: "button_click",
-      category: "Homepage",
-      action: "Click Get Started",
-      label: "Hero CTA Button",
-    })
-  }
->
-  Get Started
-</Link>
 
 const Hero = ({ title, subtitle }) => (
   <section className="py-10 lg:py-20">
@@ -26,7 +12,7 @@ const Hero = ({ title, subtitle }) => (
         {subtitle}
       </p>
       <Link
-        to="https://web.getregulus.co/register"
+        to="https://github.com/getregulus/"
         className="bg-blue-400 text-white px-8 py-3 rounded-3xl shadow-lg hover:bg-blue-500 transition duration-300"
         onClick={() =>
           trackEvent({

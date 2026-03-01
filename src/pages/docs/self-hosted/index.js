@@ -34,36 +34,17 @@ const SelfHosted = () => {
 
             <p className="text-gray-700 text-base mb-6 leading-relaxed">
               The Regulus Platform offers unparalleled security and monitoring
-              capabilities for Web3 transactions. It is available in two
-              configurations:
+              capabilities for Web3 transactions. The self-hosted version allows
+              you to host Regulus on your infrastructure (installation at{" "}
+              <a
+                className="text-blue-500"
+                href="https://github.com/getregulus"
+                target="_blank"
+              >
+                here
+              </a>
+              ).
             </p>
-            <ul className="list-disc list-inside space-y-4 mb-6">
-              <li className="text-gray-700 text-base">
-                <span className="font-semibold text-gray-800">Cloud:</span>{" "}
-                Hosted on Regulus servers (available at{" "}
-                <Link
-                  className="text-blue-500"
-                  to="https://web.getregulus.co/login"
-                >
-                  here
-                </Link>
-                )
-              </li>
-              <li className="text-gray-700 text-base">
-                <span className="font-semibold text-gray-800">
-                  Self-Hosted:
-                </span>{" "}
-                Hosted on your infrastructure (installation at{" "}
-                <a
-                  className="text-blue-500"
-                  href="https://github.com/getregulus"
-                  target="_blank"
-                >
-                  here
-                </a>
-                )
-              </li>
-            </ul>
 
             <h2 className="text-gray-800 text-xl sm:text-2xl font-medium mb-8">
               Overview
@@ -71,8 +52,7 @@ const SelfHosted = () => {
             <p className="text-gray-700 text-base mb-6 leading-relaxed">
               The Self-Hosted version of Regulus is designed for organizations
               requiring complete control over their monitoring infrastructure.
-              This solution offers the same powerful features as the
-              cloud-hosted version but allows you to deploy and manage it within
+              This solution offers powerful features and allows you to deploy and manage it within
               your own infrastructure, enabling enhanced customization,
               security, and compliance.
             </p>

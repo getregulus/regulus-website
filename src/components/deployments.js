@@ -4,14 +4,6 @@ import { Link } from "gatsby"
 const Deployments = () => {
   const deploymentOptions = [
     {
-      title: "Regulus Cloud",
-      description:
-        "We handle all maintenance and scalability so you can focus on your operations. Detect and resolve issues instantly with usage-based pricing that grows with you.",
-      buttonText: "Learn More",
-      link: "https://web.getregulus.co/",
-      color: "border-yellow-500",
-    },
-    {
       title: "Regulus Self-Hosted",
       description:
         "Take full control by hosting Regulus on your infrastructure. Benefit from predictable, node-based pricing and total customization.",
@@ -40,8 +32,7 @@ const Deployments = () => {
             Deployments
           </h2>
           <p className="text-gray-700 mb-6 max-w-md">
-            Regulus Cloud or Self-Hosted. Choose the option that best
-            fits your operational needs.
+            Self-Hosted. Take full control of your monitoring infrastructure.
           </p>
         </div>
 

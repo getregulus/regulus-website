@@ -42,22 +42,6 @@ const Footer = () => (
             <ul className="space-y-2 text-gray-600 text-sm flex-1">
               <li>
                 <a
-                  href="https://web.getregulus.co/"
-                  className="hover:text-gray-800"
-                  onClick={() =>
-                    trackEvent({
-                      event: "button_click",
-                      category: "Footer – Products",
-                      action: "Click Regulus Cloud",
-                      label: "Footer Regulus Cloud Link",
-                    })
-                  }
-                >
-                  Regulus Cloud
-                </a>
-              </li>
-              <li>
-                <a
                   href="https://github.com/getregulus/"
                   target="_blank"
                   rel="noopener noreferrer"
